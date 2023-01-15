@@ -1,0 +1,2 @@
+[15-Nov-2022 21:36:03 UTC] PHP Parse error:  syntax error, unexpected '|', expecting variable (T_VARIABLE) in /home/cloudchef/public_html/vendor/nunomaduro/termwind/src/Functions.php on line 17
+[15-Nov-2022 21:36:09 UTC] PHP Parse error:  syntax error, unexpected '|', expecting variable (T_VARIABLE) in /home/cloudchef/public_html/vendor/nunomaduro/termwind/src/Functions.php on line 17
