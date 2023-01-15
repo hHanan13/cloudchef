@@ -1,0 +1,68 @@
+
+body{
+  direction: rtl;
+  text-align: right;
+}
+
+
+.brand__cloud {
+  right: 0;
+}
+.get__started {
+  left: -71px;
+}
+.arr__img {
+  left: 22px;
+}
+.main__banner::before {
+  right: -20px;
+}
+.get__arr {
+  left: -50px;
+}
+.gets__wrap {
+  right: 0;
+}
+.ask__img {
+  left: 20px;
+}
+.about__one {
+  right: -90px;
+}
+.about__des::before {
+  left: 0;
+}
+.ght__wrap {
+  background-position: right;
+}
+@media(max-width: 991px) {
+  .ask__img {
+    left: 0;
+  }
+}
+@media(max-width: 575px) {
+  .get__started {
+    left: -20px;
+  }
+  .arr__img {
+    left: 2px;
+  }
+  .get__arr {
+    left: -70px;
+  }
+  .ask__img {
+    left: 20px;
+  }
+  .about__one {
+    right: -30px;
+  }
+}
+
+/* start footer*/
+
+
+
+.go-top {
+  left: 10px;
+}
+

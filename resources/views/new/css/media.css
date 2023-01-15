@@ -1,0 +1,256 @@
+/*** extra large screens ***/
+
+@media (min-width: 1700px){
+  .container, .container-lg,
+   .container-md, .container-sm, .container-xl {
+    max-width: 1640px
+  }
+  .started__section {
+    padding: 112px 0 102px 0;
+  }
+  .started__des p {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}
+
+/*** large screens ***/
+@media(min-width: 992px) {
+  .gets__wrap {
+    height: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .ps__95 {
+    padding-inline-start: 95px;
+  }
+  .mission__row {
+    padding-inline-start: 140px;
+  }
+}
+
+@media(max-width: 1699px) {
+  .main__banner, .main__banner .banner__img {
+    height: auto;
+  }
+  .brand__cloud {
+    padding: 45px 26px;
+    padding-inline-start: 80px;
+  }
+  .brand__cloud h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  .brand__cloud h3 {
+    font-size: 26px;
+  }
+  .pt__80 {
+    padding-top: 60px;
+  }
+  .started__des p {
+    font-size: 22px;
+  }
+  .about__des p{
+    font-size: 22px;
+  }
+  .about__des {
+    padding: 90px 110px 90px 67px;
+   }
+}
+/*** all mobile screens ***/
+@media(max-width: 991px) {
+  .intro__section {
+    padding-inline-start: 120px;
+    padding-inline-end: 60px;
+    padding-bottom: 200px;
+  }
+  .main__banner, .main__banner .banner__img {
+    height: auto;
+  }
+  .brand__cloud {
+    max-width: 70%;
+    top: 170px;
+    padding-inline-start: 60px;
+  }
+  .brand__cloud h2 {
+    font-size: 34px;
+    margin-bottom: 26px;
+  }
+  .brand__cloud h3 {
+    font-size: 28px;
+  }
+  .ght__wrap {
+    height: auto;
+  }
+  .kitchens__section {
+    padding: 40px 0;
+  }
+  .pt__80 {
+    padding-top: 20px;
+  }
+  .icons__card {
+    margin-bottom: 40px;
+  }
+  .icons__card img {
+    max-width: 76px;
+    margin-inline-end: 26px;
+  }
+  .icons__card span {
+    font-size: 22px;
+  }
+  .started__section {
+    height: auto;
+    padding: 70px 0;
+    margin-bottom: 60px;
+  }
+  .started__des {
+    padding: 30px 10px;
+  }
+  .started__des p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .mission__section {
+    padding-top: 70px;
+    margin-bottom: 60px;
+  }
+  .mission__card, .mission__des {
+    padding: 20px;
+  }
+  .why__section {
+    padding: 0 30px 60px 30px;
+  }
+  .why__container {
+    padding-top: 60px;
+  }
+  .ask__img {
+    max-width: 140px;
+  }
+  .features__section {
+    padding: 70px 0;
+  }
+  .feature__card {
+    width: 270px;
+    margin-bottom: 40px;
+  }
+  .about__content {
+    padding-top: 20px;
+  }
+  .bottom__card {
+    margin-bottom: 50px;
+  }
+  .bottom__card img {
+    margin-bottom: 26px;
+  }
+  footer {
+    padding: 40px 0;
+  }
+}
+
+/*** medium screens ***/
+@media(max-width: 767px) {
+  .logo__wrapper {
+    padding: 20px 0;
+  }
+  .intro__section {
+    padding-inline-start: 15px;
+    padding-inline-end: 30px;
+  }
+  .brand__cloud {
+    padding: 20px;
+  }
+  .get__started {
+    width: 110px;
+    height: 90px;
+  }
+  .arr__img {
+    width: 40px;
+    top: 30px;
+  }
+  .card_wrap {
+    padding: 30px 0;
+  }
+  .icons__card {
+    margin-bottom: 40px;
+  }
+  .icons__card span {
+    font-size: 20px;
+  }
+  .icons__card img {
+    max-width: 70px;
+  }
+  .started__des p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .get__link {
+    width: 181px;
+    height: 56px;
+    font-size: 24px;
+  }
+  .get__arr {
+    top: 10px;
+  }
+  .why__section {
+    padding: 0 20px 60px 20px;
+  }
+  .why__container {
+    padding-top: 40px;
+  }
+  .why__title {
+    font-size: 26px;
+  }
+  .why__section p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .about__des {
+    padding: 40px 30px;
+  }
+  .about__title {
+    font-size: 26px;
+    padding-inline-start: 30px;
+  }
+  .about__des p {
+    font-size: 16px;
+  }
+  .mission__des p {
+    font-size: 18px;
+  }
+  .kt__img, .ght__wrap, .about__images{
+    display: none;
+  }
+  .about__des::before {
+    width: 90px;
+  }
+}
+
+/*** small screens ***/
+@media(max-width: 575px) {
+  .brand__cloud h2 {
+    font-size: 24px;
+    margin-bottom: 26px;
+  }
+  .brand__cloud h3 {
+    font-size: 20px;
+  }
+  .get__started {
+    font-size: 22px;
+  }
+  .main__banner::before {
+    display: none;
+  }
+  .intro__section {
+    height: 80vh;
+    padding-bottom: 150px;
+  }
+  .ask__img {
+    max-width: 90px;
+  }
+  .feat__img {
+    max-width: 92px;
+  }
+}
