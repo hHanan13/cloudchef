@@ -51,9 +51,12 @@
                 <li class="nav-item">
                     <a class="nav-link show__started__modal" href="#"> @lang('lang.Restaurant Registration')</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="{{ url('/jobs') }}"> @lang('lang.jobs')</a>
                 </li>
+                <li class="nav-item active">
+                            <a class="nav-link" href="{{ url('/services') }}"> services </a>
+                        </li>
                 
             </ul>
             @if(App::getLocale() == 'ar')
@@ -107,6 +110,7 @@
               </div>
           @endif
        </div>
+       
             @yield('content')
         
     <!--start footer-->

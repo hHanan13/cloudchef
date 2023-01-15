@@ -2383,3 +2383,151 @@ footer {
   font-weight: 500;
   text-transform: capitalize;
 }
+
+/*** services page ***/
+.servicesPage_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.services__section {
+  position: relative;
+}
+.myFlex__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.servThumb_col {
+  padding-top: 240px;
+  background-color: #F8F6EA;
+  padding-bottom: 90px;
+}
+.servImgFluid {
+  max-width: 90%;
+  position: relative;
+  z-index: 2;
+}
+.servEtablish_col {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  padding-bottom: 160px;
+  padding-inline-start: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.absolute__Div {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 260px;
+  background-color: #2B403B;
+  background-image: url("../images/srv.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.servTitleLg {
+  font-size: 24px;
+  color: #2B403B;
+  margin-bottom: 35px;
+}
+.servDesmd {
+  color: rgba(43, 64, 59, 0.8);
+  font-size: 20px;
+  max-width: 450px;
+}
+.identity__section {
+  background-color: #fff;
+}
+.identThumb_col {
+  padding-top: 160px;
+  padding-bottom: 90px;
+}
+.menuDesign__section {
+  position: relative;
+}
+
+.designmThumb_col {
+  background-color: #fff;
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+.bk__yellow {
+  background-color: #F8F6EA;
+}
+.mOperating__section {
+  background-color: #2B403B;
+}
+.servOperating_col {
+  height: 100%;
+  padding-bottom: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.col__yellow .servTitleLg,  .col__yellow .servDesmd{
+  color: #F8F6EA;
+}
+.operatingThumb_col {
+  padding-top: 70px;
+  padding-bottom: 110px;
+}
+.servSupport_col {
+  height: 100%;
+  padding-bottom: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.supportThumb_col {
+  padding-top: 54px;
+  padding-bottom: 210px;
+}
+.col__orange .servTitleLg,  .col__orange .servDesmd{
+  color: #DF4E3A;
+}
+.mSupport__section {
+  background-color: #2B403B;
+  background-image: url("../images/bky.png");
+  background-size: cover;
+}
+.servPlatform_col {
+  height: 100%;
+  padding-bottom: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.w__400 {
+  max-width: 400px;
+}
+.platformThumb_col {
+  padding-bottom: 70px;
+}
+.mfinancial__section {
+  position: relative;
+  background-color: #fff;
+}
+.financialThumb_col {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.pb__230 {
+  padding-bottom: 230px;
+}
+.fromToThumb_col {
+  padding-top: 124px;
+  padding-bottom: 124px;
+  background-color: #fff;
+}
+.pb__290 {
+  padding-bottom: 290px;
+  background-color: #F8F6EA;
+}
+.fromTo__section {
+  position: relative;
+  background-color: #F8F6EA;
+}
