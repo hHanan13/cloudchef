@@ -1,0 +1,157 @@
+
+body{
+  direction: ltr;
+  text-align: left;
+}
+
+.brand__cloud {
+  left: 0;
+    border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -ms-border-radius: 0 6px 6px 0;
+  -o-border-radius: 0 6px 6px 0;
+}
+.get__started {
+  right: -71px;
+}
+.arr__img {
+  right: 22px;
+}
+@keyframes hingtop {
+  0%{
+    transform: translateX(0)rotate(0);
+    -webkit-transform: translateX(0)rotate(0);
+    -moz-transform: translateX(0)rotate(0);
+    -ms-transform: translateX(0)rotate(0);
+    -o-transform: translateX(0)rotate(0);
+  }
+  100%{
+    transform: translateX(-10px)rotate(-10deg);
+    -webkit-transform: translateX(-10px)rotate(-10deg);
+    -moz-transform: translateX(-10px)rotate(-10deg);
+    -ms-transform: translateX(-10px)rotate(-10deg);
+    -o-transform: translateX(-10px)rotate(-10deg);
+  }
+}
+.main__banner::before {
+  left: -20px;
+}
+.get__arr {
+  right: -70px;
+}
+.gets__wrap {
+  left: 0;
+}
+.ask__img {
+  right: 20px;
+}
+.about__one {
+  left: -90px;
+}
+.about__des::before {
+  right: 0;
+  transform: scaleX(-1) !important;
+  -webkit-transform: scaleX(-1) !important;
+  -moz-transform: scaleX(-1) !important;
+  -ms-transform: scaleX(-1) !important;
+  -o-transform: scaleX(-1) !important;
+}
+.ght__wrap {
+  background-position: left;
+}
+
+@media(max-width: 991px) {
+  .ask__img {
+    right: 0;
+  }
+}
+@media(max-width: 575px) {
+  .get__started {
+    right: -20px;
+  }
+  .arr__img {
+    right: 12px;
+  }
+  .get__arr {
+    right: -70px;
+  }
+  .ask__img {
+    right: 20px;
+  }
+  .about__one {
+    left: -30px;
+  }
+}
+
+.go-top {
+  right: 10px;
+}
+
+.close__modal {
+  right: 140px;
+}
+@media(max-width: 991px) {
+.close__modal {
+    right: 20px;
+  }
+}
+
+
+/*** start dashboard ***/
+.search__form .form__group .submit__btn {
+  right: 20px;
+}
+
+.nice-select:after {
+  right: 20px;
+}
+
+.calender__icon {
+  right: 20px;
+}
+
+/*** login page ***/
+.login__card:before {
+  right: 0;
+}
+
+
+/*start header navbar */
+
+@media(max-width: 992px) {
+  #burgerBtn {
+    right: 30px;
+  }
+  #burgerBtn:before {
+    left: -2px;
+  }
+    #burgerBtn:after {
+      left: -2px;
+   }
+  }
+
+
+  .sm__control {
+    right: 0;
+  }
+
+  @media (min-width: 1200px){
+    .p__absolute {
+      right: 0;
+    }
+  }
+
+  .abs__value {
+    right: 20px;
+  }
+
+  .started__section {
+    background-image: url("../images/bkkk.png");
+  }
+  .icon__visa {
+    right: 16px;
+  }
+  .icon__askk {
+    right: 16px;
+  }

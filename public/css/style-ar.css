@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
+
+body{
+  direction: rtl;
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+}
+
+
+.brand__cloud {
+  right: 0;
+  border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -ms-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+}
+.get__started {
+  left: -71px;
+  height: 100px;
+  width: 150px;
+  font-size: 32px;
+}
+.arr__img {
+  left: 14px;
+  height: 28px;
+  top: 23px
+}
+@keyframes hingtop {
+  0%{
+    transform: translateX(0)rotate(180deg);
+    -webkit-transform: translateX(0)rotate(180deg);
+    -moz-transform: translateX(0)rotate(180deg);
+    -ms-transform: translateX(0)rotate(180deg);
+    -o-transform: translateX(0)rotate(180deg);
+  }
+  100%{
+    transform: translateX(-10px)rotate(170deg);
+    -webkit-transform: translateX(-10px)rotate(170deg);
+    -moz-transform: translateX(-10px)rotate(170deg);
+    -ms-transform: translateX(-10px)rotate(170deg);
+    -o-transform: translateX(-10px)rotate(170deg);
+  }
+}
+.main__banner::before {
+  right: -20px;
+}
+.get__arr {
+  left: -50px;
+}
+.gets__wrap {
+  right: 0;
+}
+.ask__img {
+  left: 20px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.about__one {
+  right: -90px;
+}
+.about__des::before {
+  left: 0;
+  transform: scaleX(-1) !important;
+  -webkit-transform: scaleX(-1) !important;
+  -moz-transform: scaleX(-1) !important;
+  -ms-transform: scaleX(-1) !important;
+  -o-transform: scaleX(-1) !important;
+}
+.ght__wrap {
+  background-position: right;
+}
+.ght__wrap img {
+  right: auto;
+  left: -30%;
+}
+@media(max-width: 991px) {
+  .ask__img {
+    left: 0;
+  }
+}
+@media(max-width: 575px) {
+  .get__started {
+    left: -20px;
+  }
+  .arr__img {
+    left: 12px;
+  }
+  .get__arr {
+    left: -70px;
+  }
+  .ask__img {
+    left: 20px;
+  }
+  .about__one {
+    right: -30px;
+  }
+}
+
+/* start footer*/
+
+
+
+.go-top {
+  left: 10px;
+}
+
+.close__modal {
+  left: 140px;
+}
+
+@media(max-width: 991px) {
+.close__modal {
+    left: 20px;
+  }
+}
+
+
+/*** start dashboard ***/
+.search__form .form__group .submit__btn {
+  left: 20px;
+}
+
+.dashboard__select {
+  text-align: right !important;
+}
+
+.nice-select:after {
+  right: auto;
+  left: 20px;
+}
+.nice-select .option {
+  text-align: right;
+}
+
+.calender__icon {
+  left: 20px;
+}
+
+/*** login page ***/
+.login__card:before {
+  left: 0;
+  transform: scaleX(-1) !important;
+  -webkit-transform: scaleX(-1) !important;
+  -moz-transform: scaleX(-1) !important;
+  -ms-transform: scaleX(-1) !important;
+  -o-transform: scaleX(-1) !important;
+}
+
+
+/*start header navbar */
+
+@media(max-width: 992px) {
+  #burgerBtn {
+    left: 30px;
+  }
+  #burgerBtn:before {
+    left: -2px;
+  }
+  #burgerBtn:after {
+      left: -2px;
+  }
+}
+
+.sm__control {
+  left: 0;
+}
+
+@media (min-width: 1200px){
+  .p__absolute {
+    left: 0;
+  }
+}
+
+.abs__value {
+  left: 20px;
+}
+
+.report__select {
+  text-align: right !important;
+}
+
+.started__section {
+  background-image: url("../images/b-ar.png");
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-position: left calc(0.375em + 0.1875rem) center;
+}
+
+.icon__visa {
+  left: 16px;
+}
+.icon__askk {
+  left: 16px;
+}

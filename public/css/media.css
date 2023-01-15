@@ -1,0 +1,557 @@
+/*** extra large screens ***/
+
+@media (min-width: 1700px){
+  .container, .container-lg,
+   .container-md, .container-sm, .container-xl {
+    max-width: 1640px
+  }
+  .modal__container {
+    max-width: 1460px
+  }
+  .started__section {
+    padding: 112px 0 102px 0;
+  }
+  .started__des p {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  .my__navbar .nav-link {
+    margin-inline-end: 90px;
+  }
+}
+
+/*** large screens ***/
+@media (min-width: 1200px){
+  .p__absolute {
+    max-width: 468px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+  .align__items {
+    padding-top: 120px;
+  }
+  .payMethod__flex {
+    width: 60%;
+  }
+}
+
+/*** large screens ***/
+@media(min-width: 992px) {
+  .navbar___flex {
+    display: flex;
+    align-items: center;
+  }
+  .my__navbar {
+    display: flex;
+    padding-inline-start: 140px;
+  }
+  .my__navbar .nav-link {
+    font-size: 19px;
+    margin-inline-end: 40px;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .gets__wrap {
+    height: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .mission__des {
+    padding-inline-end: 126px;
+  }
+  .ps__95 {
+    padding-inline-start: 95px;
+  }
+  .mission__row {
+    padding-inline-start: 140px;
+  }
+  .mission__des {
+    padding-inline-end: 80px;
+  }
+  .dashboard__main__container {
+    max-width: 97%;
+  }
+  .report__container {
+    max-width: 880px;
+  }
+  .started__section {
+    background-position: center;
+  }
+  .payment__column {
+    width: 50%;
+  }
+  .payment__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .width__Colthird {
+    width: 30%;
+  }
+}
+
+@media(max-width: 1199px) {
+  .search__form .form__group {
+    margin-bottom: 16px;
+    justify-content: space-between;
+  }
+}
+@media(max-width: 1699px) {
+  .my__modal .close__modal {
+    top: 40px
+  }
+  .main__banner, .main__banner .banner__img {
+    height: auto;
+  }
+  .brand__cloud {
+    top: 117px;
+  }
+  .brand__cloud h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .brand__cloud h3 {
+    font-size: 26px;
+  }
+  .pt__80 {
+    padding-top: 60px;
+  }
+  .started__des p {
+    font-size: 20px;
+  }
+  .about__des p{
+    font-size: 20px;
+  }
+  .about__des {
+    padding: 90px 110px 90px 67px;
+   }
+   .checkPay__wrap {
+    width: 200px;
+  }
+}
+/*** all mobile screens ***/
+@media(max-width: 991px) {
+  .my__modal {
+    background-color: #F8F6EA;
+  }
+  .logo__container {
+    align-items: center;
+  }
+  .sidebar-wrapper {
+    background-image: url(../img/bf.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 180px;
+    padding-top: 20px;
+    position: fixed;
+    display: block;
+    background-color: #F8F6EA;
+    right: 20px;
+    top: 20px;
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+    max-height: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 788;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transform: translateY(150%)rotate(-90deg);
+    -webkit-transform: translateY(150%)rotate(-90deg);
+    -moz-transform: translateY(150%)rotate(-90deg);
+    -ms-transform: translateY(150%)rotate(-90deg);
+    -o-transform: translateY(150%)rotate(-90deg);
+}
+.sidebar-wrapper .m-head {
+  padding: 20px;
+  border-bottom: 1px dotted #464644;
+  margin-bottom: 30px;
+}
+.sidebar-wrapper .m-head h3 {
+  font-size: 20px;
+  color: #2B403B;
+}
+.sidebar-show{
+ transition: transform 0.5s ease-in-out;
+ -webkit-transition: transform 0.5s ease-in-out;
+ -moz-transition: transform 0.5s ease-in-out;
+ -ms-transition: transform 0.5s ease-in-out;
+ -o-transition: transform 0.5s ease-in-out;
+ transform:translateY(0)rotate(0);
+ -webkit-transform:translateY(0)rotate(0);
+ -moz-transform:translateY(0)rotate(0);
+ -ms-transform:translateY(0)rotate(0);
+ -o-transform:translateY(0)rotate(0);
+}
+.sidebar-wrapper .nav-link {
+  color: #2B403B;
+  padding: 10px 0;
+  text-align: center;
+}
+.lang__link {
+  margin: auto;
+}
+
+#burgerBtn {
+  border-top: none;
+  height: 25px;
+  width: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 3000;
+  top: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -khtml-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+#burgerBtn:before, #burgerBtn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 33px;
+  background: #DF4E3A;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -khtml-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+#burgerBtn:before {
+  top: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+  #burgerBtn:after {
+    bottom: 11px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+  .d__mob__none {
+    display: none;
+  }
+  .my__modal .close__modal {
+    top: 20px
+  }
+  .intro__section {
+    padding-inline-start: 120px;
+    padding-inline-end: 60px;
+    padding-bottom: 200px;
+  }
+  .main__banner, .main__banner .banner__img {
+    height: auto;
+  }
+  .brand__cloud {
+    max-width: 70%;
+    top: 170px;
+    padding-inline-start: 60px;
+  }
+  .brand__cloud h2 {
+    font-size: 34px;
+    margin-bottom: 26px;
+  }
+  .brand__cloud h3 {
+    font-size: 24px;
+  }
+  .ght__wrap {
+    display: none;
+  }
+  .kitchens__section {
+    padding: 40px 0;
+  }
+  .pt__80 {
+    padding-top: 20px;
+  }
+  .icons__card {
+    margin-bottom: 40px;
+  }
+  .icon__img {
+    min-width: 100px;
+  }
+  .icons__card img {
+    max-width: 76px;
+  }
+  .started__section {
+    height: auto;
+    padding: 70px 0;
+    margin-bottom: 60px;
+  }
+  .started__des {
+    padding: 30px 10px;
+  }
+  .started__des p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .mission__section {
+    padding-top: 70px;
+    margin-bottom: 60px;
+  }
+  .mission__card, .mission__des {
+    padding: 20px;
+  }
+  .why__section {
+    padding: 0 30px 60px 30px;
+  }
+  .why__container {
+    padding-top: 60px;
+  }
+  .ask__img {
+    max-width: 140px;
+  }
+  .features__section {
+    padding: 70px 0;
+  }
+  .feature__card {
+    width: 270px;
+    margin-bottom: 40px;
+  }
+  .about__content {
+    padding-top: 20px;
+  }
+  .bottom__card {
+    margin-bottom: 50px;
+  }
+  .bottom__card img {
+    margin-bottom: 26px;
+  }
+  footer {
+    padding: 40px 0;
+  }
+  .conditions__section {
+    padding: 36px 0 60px 0;
+  }
+  .pt__70 {
+    padding-bottom: 70px;
+  }
+  .width__Colthird {
+    margin-bottom: 20px;
+  }
+}
+
+
+/*** medium screens ***/
+@media(max-width: 767px) {
+  .logo__wrapper {
+    padding: 20px 0;
+  }
+  .intro__section {
+    padding-inline-start: 15px;
+    padding-inline-end: 30px;
+  }
+  .brand__cloud {
+    padding: 20px;
+    top: 26px !important;
+  }
+  .get__started {
+    width: 110px;
+    height: 90px;
+  }
+  .arr__img {
+    width: 40px;
+    top: 30px;
+  }
+  .card_wrap {
+    padding: 30px 0;
+  }
+  .icons__card {
+    margin-bottom: 40px;
+  }
+  .icons__card span {
+    font-size: 17px;
+  }
+  .icons__card img {
+    max-width: 70px;
+    height: 60px;
+  }
+  .started__des p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .get__link {
+    width: 181px;
+    height: 56px;
+    font-size: 24px;
+  }
+  .get__arr {
+    top: 10px;
+  }
+  .why__section {
+    padding: 0 20px 60px 20px;
+  }
+  .why__container {
+    padding-top: 40px;
+  }
+  .why__title {
+    font-size: 26px;
+  }
+  .why__section p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .about__des {
+    padding: 40px 30px;
+  }
+  .about__title {
+    font-size: 26px;
+    padding-inline-start: 30px;
+  }
+  .about__des p {
+    font-size: 16px;
+  }
+  .mission__des p {
+    font-size: 18px;
+  }
+  .kt__img, .about__images{
+    display: none;
+  }
+  .about__des::before {
+    width: 90px;
+  }
+  .contact__info {
+    background-size: 140px;
+  }
+  .dashsidebar {
+    margin: auto;
+    height: fit-content;
+  }
+  .button__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .white__btn {
+    margin-inline-end: 0;
+    margin-bottom: 20px;
+  }
+  .dashboard__table {
+    width: 1200px;
+  }
+  .code__input {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .dashtop__flex {
+    padding-top: 40px;
+  }
+  .dash__inner__pills {
+    padding: 10px;
+  }
+  .dash__inner__pills .nav-link {
+    padding: 10px;
+    text-align: center;
+  }
+  .collapse__btn__faqs, .faqs__content {
+    padding: 14px;
+    font-size: 16px;
+  }
+  .faqs__title i {
+    font-size: 16px;
+  }
+  .checkPay__wrap {
+    margin-bottom: 20px;
+  }
+}
+
+/*** small screens ***/
+@media(max-width: 575px) {
+  .brand__cloud h2 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .brand__cloud h3 {
+    font-size: 14px;
+  }
+  .get__started {
+    bottom: -50px;
+    width: 120px !important;
+    font-size: 22px !important;
+    height: 90px !important;
+  }
+  .main__banner::before {
+    display: none;
+  }
+  .intro__section {
+    padding-bottom: 80px;
+  }
+  .ask__img {
+    max-width: 90px;
+  }
+  .feat__img {
+    max-width: 92px;
+  }
+  .check__relative {
+    margin-inline-end: 10px;
+  }
+  .register__wrap {
+    padding: 40px 20px;
+  }
+  .contact__info {
+    padding: 40px 20px;
+  }
+  .contact__title {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  .info__num {
+    font-size: 16px;
+  }
+  .modal__btn {
+    font-size: 18px;
+  }
+  .confirm__card p {
+    font-size: 22px;
+  }
+  .info__icon {
+    margin-inline-end: 26px;
+  }
+  .my__logo img {
+    height: 70px;
+  }
+  .conditions__container {
+    padding: 30px 20px;
+  }
+  .conditions__container p {
+    font-size: 16px;
+  }
+  .terms__btn {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .terms__label {
+    font-size: 14px;
+  }
+  .terms__link {
+    font-size: 15px;
+  }
+  .modal__title {
+    font-size: 18px;
+  }
+  .feature__card p, .feat__name {
+    font-size: 20px;
+  }
+  .payMethod__flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
