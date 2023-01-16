@@ -745,3 +745,19 @@
     </section>
 
 @endsection
+<!-- @push('scripts')
+<script>
+    //    var limit = 2;
+    //     $('input.check__input').on('change', function(e) {
+    //     if($(this).siblings(':checked').length >= limit) {
+    //         this.checked = false;
+    //     }
+    //     });
+    $('input[type=checkbox]').on('change', function (e) {
+    if ($('input[type=checkbox]:checked').length > 3) {
+        $(this).prop('checked', false);
+        alert("allowed only 2 choice for your kitchen");
+    }
+});
+    </script>
+@endpush -->

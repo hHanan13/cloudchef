@@ -114,7 +114,12 @@ $('.show__confirm__modal').click(function () {
   $('body').addClass('overflow__hidden');
 })
 
-
+$('input.check__input').on('change', function (e) {
+  if ($('input.check__input:checked').length > 3) {
+      $(this).prop('checked', false);
+      alert("allowed only 2 choice for your kitchen");
+  }
+});
 // dashboard nice select
 
 $(document).ready(function() {

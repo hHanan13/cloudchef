@@ -142,12 +142,13 @@
     </script>
 
     <script>
-       var limit = 2;
-        $('input.check__input').on('change', function(evt) {
-        if($(this).siblings(':checked').length >= limit) {
-            this.checked = false;
-        }
-        });
+    //    var limit = 2;
+    //     $('input.check__input').on('change', function(e) {
+    //     if($(this).siblings(':checked').length >= limit) {
+    //         this.checked = false;
+    //     }
+    //     });
+    
     </script>
 
         @if(app()->getLocale()=='ar')
