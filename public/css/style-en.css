@@ -155,3 +155,24 @@ body{
   .icon__askk {
     right: 16px;
   }
+  .one_skip_slider .slick-next {
+    right: 20px;
+  }
+  .absolute__Div {
+    right: 0;
+  }
+
+  @media(min-width: 992px) {
+    .identThumb_col::before {
+      left: 0;
+    }
+    .menuDesign__section::before {
+      left: 0;
+    }
+    .mfinancial__section::before {
+      left: 0;
+    }
+    .fromTo__section::before {
+      right: 0;
+    }
+  }

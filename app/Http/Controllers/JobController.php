@@ -28,11 +28,17 @@ class JobController extends Controller
         $validated = $request->validate( [
             'name' => 'required|string',
             'email' => 'required|email|unique:jobs',
+            'age' => 'required',
+            'phone' => 'required',
+            'image' => 'required',
+            'file_job' => 'required',
+            'type' => 'required',
+            'city' => 'required',
         ]);
 
-        if (!$request->has('file_job')) {
-            return response()->json(['message' => 'Missing file'], 422);
-        }
+        // if (!$request->has('file_job')) {
+        //     return response()->json(['message' => 'Missing file'], 422);
+        // }
         
         $imageName = time().'.'.$request->image->extension();
        
@@ -73,11 +79,17 @@ class JobController extends Controller
         $validated = $request->validate( [
             'name' => 'required|string',
             'email' => 'required|email|unique:jobs',
+            'age' => 'required',
+            'phone' => 'required',
+            'image' => 'required',
+            'file_job' => 'required',
+            'type' => 'required',
+            'city' => 'required',
         ]);
 
-        if (!$request->has('file_job')) {
-            return response()->json(['message' => 'Missing file'], 422);
-        }
+        // if (!$request->has('file_job')) {
+        //     return response()->json(['message' => 'Missing file'], 422);
+        // }
         
         $imageName = time().'.'.$request->image->extension();
 

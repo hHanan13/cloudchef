@@ -273,59 +273,59 @@
                                             <div class="form-group col-12 col-lg-6">
                                                 <label for="" class="abs__label">@lang('lang.name')</label>
                                                 <input type="text"  placeholder="@lang('lang.name')" class="form-control @error('name') is-invalid @enderror" name="name">
-                                                @error('name')
+                                                <!-- @error('name')
                                                 <div class="alert alert-danger">{{ $message }}</div>
-                                            @enderror
+                                            @enderror -->
                                             </div>
 
                                             <div class="form-group col-12 col-lg-6">
                                                 <label for="" class="abs__label">@lang('lang.number')</label>
-                                                <input type="text" name="phone" placeholder="@lang('lang.number')" class="form-control @error('phone') is-invalid @enderror">
-                                                <span class="text-danger"> @error('phone') {{$message}} @enderror</span>
+                                                <input type="tel" name="phone" placeholder="@lang('lang.number')" class="form-control @error('phone') is-invalid @enderror">
+                                                <!-- <span class="text-danger"> @error('phone') {{$message}} @enderror</span> -->
 
                                             </div>
 
                                             <div class="form-group col-12 col-lg-6">
                                                 <label for="" class="abs__label">@lang('lang.brand name')</label>
                                                 <input type="text" name="store_name" placeholder="@lang('lang.brand name')" class="form-control @error('store_name') is-invalid @enderror">
-                                                <span class="text-danger">
+                                                <!-- <span class="text-danger">
 
                                                             @error('store_name') {{$message}} @enderror
-                                                        </span>
+                                                        </span> -->
                                             </div>
 
                                             <div class="form-group col-12 col-lg-6">
                                                 <label for="" class="abs__label">@lang('lang.city')</label>
                                                 <input type="text" name="city" placeholder="@lang('lang.city')" class="form-control @error('city') is-invalid @enderror">
-                                                <span class="text-danger"> @error('city') {{$message}} @enderror</span>
+                                                <!-- <span class="text-danger"> @error('city') {{$message}} @enderror</span> -->
                                             </div>
 
                                             <div class="form-group col-12 col-lg-6">
                                                 <label for="" class="abs__label">@lang('lang.website')</label>
                                                 <input type="text" name="website" placeholder="@lang('lang.website')" class="form-control @error('website') is-invalid @enderror">
-                                                <span class="text-danger"> @error('website') {{$message}} @enderror</span>
+                                                <!-- <span class="text-danger"> @error('website') {{$message}} @enderror</span> -->
 
                                             </div>
 
                                             <div class="form-group col-12 col-lg-6">
                                                 <label for="" class="abs__label">@lang('lang.number of employees')</label>
-                                                <input type="text" name="num_emp" placeholder="@lang('lang.number of employees')" class="form-control @error('num_emp') is-invalid @enderror">
-                                                <span class="text-danger"> @error('num_emp') {{$message}} @enderror</span>
+                                                <input type="number" name="num_emp" placeholder="@lang('lang.number of employees')" class="form-control @error('num_emp') is-invalid @enderror">
+                                                <!-- <span class="text-danger"> @error('num_emp') {{$message}} @enderror</span> -->
 
                                             </div>
 
                                             <div class="form-group col-12 col-lg-6">
                                                 <label for="" class="abs__label">@lang('lang.email')</label>
                                                 <input type="email" name="email" placeholder="@lang('lang.email')" class="form-control @error('email') is-invalid @enderror">
-                                                @error('email')
+                                                <!-- @error('email')
                                                 <div class="alert alert-danger">{{ $message }}</div>
-                                            @enderror
+                                            @enderror -->
                                             </div>
 
                                             <div class="form-group col-12 col-lg-6">
                                             <label for="" class="abs__label">@lang('lang.number of branches')</label>
-                                                <input type="text" name="num_branches" placeholder="@lang('lang.number of branches')" class="form-control @error('num_branches') is-invalid @enderror">
-                                                <span class="text-danger"> @error('num_branches') {{$message}} @enderror</span>
+                                                <input type="number" name="num_branches" placeholder="@lang('lang.number of branches')" class="form-control @error('num_branches') is-invalid @enderror">
+                                                <!-- <span class="text-danger"> @error('num_branches') {{$message}} @enderror</span> -->
 
                                             </div>
 
@@ -390,11 +390,12 @@
                                                 </div>
                                             </div>
                                             <label class="terms__label">
-                                                <input type="checkbox" class="terms__check">
+                                                <input type="checkbox" class="terms__check" name="cond">
                                                 <span class="agree__des">
-                                                @lang('lang.agree to the') <a href="{{ url('/conditions') }}" class="terms__link">@lang('lang.terms and conditions')</a>
+                                                 @lang('lang.agree to the') <a href="{{ url('/conditions') }}" class="terms__link">@lang('lang.terms and conditions')</a>
                                                 </span>
                                             </label>
+                                            <span class="text-danger"> @error('cond') {{$message}} @enderror</span>
                                             <button type="submit" class=" modal__btn next__btn">@lang('lang.next')</button>
                                        </div>
                                  

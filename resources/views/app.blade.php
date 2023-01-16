@@ -81,8 +81,11 @@
                         <li class="nav-item">
                             <a class="nav-link show__started__modal" href="#"> @lang('lang.Restaurant Registration')</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ url('/jobs') }}"> @lang('lang.jobs')</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url('/services') }}"> services </a>
                         </li>
                     </ul>
                 </div>
@@ -136,6 +139,15 @@
     <script src="{{asset('/js/datepicker.js')}}"></script>
     <script>
       new WOW().init(); 
+    </script>
+
+    <script>
+       var limit = 2;
+        $('input.check__input').on('change', function(evt) {
+        if($(this).siblings(':checked').length >= limit) {
+            this.checked = false;
+        }
+        });
     </script>
 
         @if(app()->getLocale()=='ar')

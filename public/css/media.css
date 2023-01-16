@@ -90,6 +90,58 @@
   .width__Colthird {
     width: 30%;
   }
+  .servThumb_col {
+    padding-inline-start: 190px;
+  }
+  .identThumb_col {
+    position: relative;
+    padding-inline-start: 130px;
+    
+  }
+  .identThumb_col::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 84%;
+    height: 100%;
+    background-color: #DF4E3A;
+  }
+  .menuDesign__section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #DF4E3A;
+    z-index: 2;
+  }
+  .operatingThumb_col {
+    padding-inline-start: 60px;
+  }
+  .platformThumb_col {
+    padding-inline-start: 60px;
+  }
+  .mfinancial__section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #EC933A;
+    z-index: 2;
+  }
+  .fromTo__section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #2B403B;
+    z-index: 2;
+  }
+  .fromToThumb_col {
+    padding-inline-start: 60px;
+  }
 }
 
 @media(max-width: 1199px) {
@@ -158,11 +210,11 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     z-index: 788;
-    transition: transform 0.5s ease-in-out;
-    -webkit-transition: transform 0.5s ease-in-out;
-    -moz-transition: transform 0.5s ease-in-out;
-    -ms-transition: transform 0.5s ease-in-out;
-    -o-transition: transform 0.5s ease-in-out;
+    transition: tranform 0.5s ease-in-out;
+    -webkit-transition: tranform 0.5s ease-in-out;
+    -moz-transition: tranform 0.5s ease-in-out;
+    -ms-transition: tranform 0.5s ease-in-out;
+    -o-transition: tranform 0.5s ease-in-out;
     transform: translateY(150%)rotate(-90deg);
     -webkit-transform: translateY(150%)rotate(-90deg);
     -moz-transform: translateY(150%)rotate(-90deg);
@@ -345,6 +397,19 @@
   .width__Colthird {
     margin-bottom: 20px;
   }
+  .bankInfoCard {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .msrfImg img {
+    width: 60%;
+  }
+  .absolute__Div {
+    display: none;
+  }
+  .servImgFluid {
+    max-width: 90%;
+  }
 }
 
 
@@ -469,6 +534,29 @@
   .checkPay__wrap {
     margin-bottom: 20px;
   }
+  .order__one {
+    order: 1;
+  }
+  .order__two {
+    order: 2;
+  }
+  .paddingSm_60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .paddingSmTop_60 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .mSupport__section {
+    background-image: none;
+  }
+  .servTitleLg {
+    margin-bottom: 20px;
+  }
+  .servDesmd {
+    font-size: 18px;
+  }
 }
 
 /*** small screens ***/
@@ -550,8 +638,52 @@
     font-size: 20px;
   }
   .payMethod__flex {
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    margin-bottom: 50px;
+  }
+  .checkPay__wrap {
+    width: 112px;
+    height: 100px;
+  }
+  .mycheckRadio {
+    padding: 8px;
+  }
+  .checkPay__title {
+    font-size: 14px;
+  }
+  .payemnt__icon {
+    font-size: 24px;
+  }
+  .credits__cardsWrap {
+    margin-bottom: 40px;
+  }
+  .creditCard {
+    margin-bottom: 20px;
+  }
+  .payment__label {
+    font-size: 16px;
+  }
+  .credit__img {
+    height: 30px;
+    margin-inline-end: 10px;
+  }
+  .checkIcon {
+    width: 19px;
+    height: 19px;
+  }
+  .skip__ques, .skipName, .skipDes {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .package__wrapper {
+    padding: 20px 10px;
+  }
+  .packageCont {
+    padding: 10px 0 10px 30px;
+  }
+  .mt__sm20 {
+    margin-top: 20px;
   }
 }

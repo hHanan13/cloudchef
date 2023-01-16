@@ -33,7 +33,7 @@
                                             <div class="relative__group">
                                                 <label for="" class="abs__label">@lang('lang.name')</label>
                                                 <input type="text" placeholder="@lang('lang.name')" class="form-control @error('name') is-invalid @enderror" name="name">
-                                                <span class="text-danger"> @error('name') {{$message}} @enderror</span>
+                                                <!-- <span class="text-danger"> @error('name') {{$message}} @enderror</span> -->
                                             </div> 
                                         </div>
 
@@ -41,7 +41,7 @@
                                             <div class="relative__group">
                                                 <label for="" class="abs__label">@lang('lang.email')</label>
                                                 <input type="email" placeholder="@lang('lang.email')" class="form-control @error('email') is-invalid @enderror" name="email">
-                                                <span class="text-danger"> @error('email') {{$message}} @enderror</span>
+                                                <!-- <span class="text-danger"> @error('email') {{$message}} @enderror</span> -->
                                             </div> 
                                         </div>
 
@@ -62,7 +62,7 @@
                                         <div class="form-group col-12">
                                             <div class="relative__group">
                                                 <label for="" class="abs__label">@lang('lang.age')</label>
-                                                <input type="text" placeholder="@lang('lang.age')" class="form-control @error('age') is-invalid @enderror" name="age">
+                                                <input type="number" placeholder="@lang('lang.age')" class="form-control @error('age') is-invalid @enderror" name="age">
                                             </div> 
                                         </div>
                                         <div class="relative__group">
@@ -76,6 +76,8 @@
                                                 <span>@lang('lang.female')</span>
                                             </label>
                                         </div>
+                                        <span class="text-danger"> @error('type') {{$message}} @enderror</span>
+
                                         <button type="submit" href="#" class="modal__btn next__btn">@lang('lang.next')</button>
                                     </div>
                                     <div class="col-12 col-md-6 align__items">

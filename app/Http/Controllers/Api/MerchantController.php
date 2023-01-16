@@ -184,7 +184,7 @@ class MerchantController extends Controller
             'email' => 'required|email|unique:users',
             'store_name' => 'required',
             'city' => 'required|string',
-            'phone' => 'required',
+            'phone' => 'required|numeric|min:11',
             'capital' => 'required|string',
             'experience' => 'required',
         ]);
@@ -213,28 +213,26 @@ class MerchantController extends Controller
     
     public function storepro(Request $request){
         
-        $rule = [
+        $validated = $request->validate( [
             'name' => 'required|string',
             'email' => 'required|email|unique:users',
             'store_name' => 'required',
             'city' => 'required|string',
-            'phone' => 'required',
-            'capital' => 'required|string',
-            'experience' => 'required',
-            'website' => 'required',
+            'phone' => 'required|numeric|min:11',
+            'website' => 'required|url',
             'num_emp' => 'required',
             'num_branches' => 'required|string',
-        ];
-        $customMessages = [
-            'required' => __('validation.attributes.required'),
-        ];
-        $validator = validator()->make($request->all(), $rule, $customMessages);
-        if ($validator->fails()) {
-            if (str_contains(validationErrorsToString($validator->errors()), 'perfume_id')) {
-                return response()->json(['status' => 423, 'message' => validationErrorsToString($validator->errors())], 422);
-            }
-            return response()->json(['status' => 422, 'message' => validationErrorsToString($validator->errors())], 422);
-        }
+        ]);
+        // $customMessages = [
+        //     'required' => __('validation.attributes.required'),
+        // ];
+        // $validator = validator()->make($request->all(), $rule, $customMessages);
+        // if ($validator->fails()) {
+        //     if (str_contains(validationErrorsToString($validator->errors()), 'perfume_id')) {
+        //         return response()->json(['status' => 423, 'message' => validationErrorsToString($validator->errors())], 422);
+        //     }
+        //     return response()->json(['status' => 422, 'message' => validationErrorsToString($validator->errors())], 422);
+        // }
         $User = merchant::create([
             'name' => $request['name'],
             'store_name' => $request['store_name'],

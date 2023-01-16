@@ -8,7 +8,7 @@
             <div class="accordion faqs__accordion" id="accordionExample">
                 <div class="faqs__card">
                     <div class="faqs__title" id="headingOne">
-                        <a href="{{route('payment')}}" class="btn btn-success"> payment 1$ USD</a>
+                        <!-- <a href="{{route('payment')}}" class="btn btn-success"> payment 1$ USD</a> -->
                         <h3 class="collapse__btn__faqs" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <span>مقدمة</span>
                             <i class="fa fa-angle-down"></i>
