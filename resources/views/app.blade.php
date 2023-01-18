@@ -55,7 +55,7 @@
                     <a class="nav-link" href="{{ url('/jobs') }}"> @lang('lang.jobs')</a>
                 </li>
                 <li class="nav-item active">
-                            <a class="nav-link" href="{{ url('/services') }}"> services </a>
+                            <a class="nav-link" href="{{ url('/services') }}"> @lang('lang.services') </a>
                         </li>
                 
             </ul>
@@ -75,7 +75,7 @@
                         <img src="{{ asset('images/logo.png') }}" alt="">
                     </a>
                     <ul class="my__navbar d__mob__none">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="{{ url('/') }}">@lang('lang.home')</a>
                         </li>
                         <li class="nav-item">
@@ -84,8 +84,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/jobs') }}"> @lang('lang.jobs')</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ url('/services') }}"> services </a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{{ url('/services') }}"> @lang('lang.services') </a>
                         </li>
                     </ul>
                 </div>

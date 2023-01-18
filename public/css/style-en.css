@@ -147,8 +147,9 @@ body{
   }
 
   .started__section {
-    background-image: url("../images/bkkk.png");
+    background-image: url(../img/bkkk.png);
   }
+  
   .icon__visa {
     right: 16px;
   }

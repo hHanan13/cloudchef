@@ -6,6 +6,9 @@
  <section class="package__section">
         <div class="container package__container">
             <div class="row package__row">
+            @if (session('message'))
+                                    <div class="alert alert-success">{{ session('message')}}</div>
+                    @endif
                 <div class="col-12 col-lg-8">
                     <div class="package__wrapper">
                         <div class="packTitle">

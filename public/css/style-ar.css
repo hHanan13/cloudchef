@@ -183,6 +183,7 @@ body{
 .started__section {
   background-image: url("../images/b-ar.png");
 }
+
 .form-control.is-invalid, .was-validated .form-control:invalid {
   background-position: left calc(0.375em + 0.1875rem) center;
 }
@@ -192,4 +193,25 @@ body{
 }
 .icon__askk {
   left: 16px;
+}
+.one_skip_slider .slick-next {
+  left: 20px;
+}
+.absolute__Div {
+  left: 0;
+}
+
+@media(min-width: 992px) {
+  .identThumb_col::before {
+    right: 0;
+  }
+  .menuDesign__section::before {
+    right: 0;
+  }
+  .mfinancial__section::before {
+    right: 0;
+  }
+  .fromTo__section::before {
+    left: 0;
+  }
 }
