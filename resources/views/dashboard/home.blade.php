@@ -18,94 +18,94 @@
                                                     <div class="col-1"></div>
                                                 </div>
                                             </div>
-                                    @if(count($users) > 0)
+                                                @if(count($users) > 0)
 
-                                        @foreach($users as $row)
-                                            <!--row one-->
-                                            <div class="twrapper table__row">
-                                                <div class="row collapse__table">
-                                                    <div class="col">{{$row->name}}</div>
-                                                    <div class="col">{{$row->store_name}}</div>
-                                                    <div class="col">{{$row->email}}</div>
-                                                    <div class="col">{{$row->phone}}</div>
-                                                    <div class="col">
-                                                        @if($row->contact == true)         
-                                                            <span class="contacted_span active__color">contacted</span>         
-                                                        @else
-                                                        <a href="{{ url('admin/report/'.$row->id.'/contact')}}" onclick="confirm('Are you sure?') || event.stopImmediatePropagation()" ><span class="contacted_span">waiting...</span></a>      
-                                                        @endif    
-                                                    </div>
-                                                    <div class="col-1">
-                                                    <div class="dropdown dashboard__dropdown">
-                                                            <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                            </button>
-                                                            <div class="dropdown-menu">
-                                                                <a class="dropdown-item open__report__wrapper" href="{{ url('/admin/report',$row->id) }}">
-                                                                    <img src="{{ asset('images/report.svg')}}" alt="" class="dropdown__icon" width="20px" height="27px">
-                                                                    <span>report</span>
-                                                                </a>
-                                                                <a class="dropdown-item" href="index.html">
-                                                                    <img src="{{ asset('images/envelope.svg')}}" alt="" class="dropdown__icon" width="20px" height="18px">
-                                                                    <span>email</span>
-                                                                </a>
-                                                                <div class="dropdown-divider"></div>
-                                                                <a class="dropdown-item delete__dashrow has__function" href="#">
-                                                                    <img src="{{ asset('images/trash.svg')}}" alt="" class="dropdown__icon" width="18px" height="27px">
-                                                                    <span>delete</span>
-                                                                </a>
+                                                    @foreach($users as $row)
+                                                        <!--row one-->
+                                                        <div class="twrapper table__row">
+                                                            <div class="row collapse__table">
+                                                                <div class="col">{{$row->name}}</div>
+                                                                <div class="col">{{$row->store_name}}</div>
+                                                                <div class="col">{{$row->email}}</div>
+                                                                <div class="col">{{$row->phone}}</div>
+                                                                <div class="col">
+                                                                    @if($row->contact == true)         
+                                                                        <span class="contacted_span active__color">contacted</span>         
+                                                                    @else
+                                                                    <a href="{{ url('admin/report/'.$row->id.'/contact')}}" onclick="confirm('Are you sure?') || event.stopImmediatePropagation()" ><span class="contacted_span">waiting...</span></a>      
+                                                                    @endif    
+                                                                </div>
+                                                                <div class="col-1">
+                                                                <div class="dropdown dashboard__dropdown">
+                                                                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                                                            <i class="fa-solid fa-ellipsis dots__icon"></i>
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item open__report__wrapper" href="{{ url('/admin/report',$row->id) }}">
+                                                                                <img src="{{ asset('images/report.svg')}}" alt="" class="dropdown__icon" width="20px" height="27px">
+                                                                                <span>report</span>
+                                                                            </a>
+                                                                            <a class="dropdown-item" href="index.html">
+                                                                                <img src="{{ asset('images/envelope.svg')}}" alt="" class="dropdown__icon" width="20px" height="18px">
+                                                                                <span>email</span>
+                                                                            </a>
+                                                                            <div class="dropdown-divider"></div>
+                                                                            <a class="dropdown-item delete__dashrow has__function" href="#">
+                                                                                <img src="{{ asset('images/trash.svg')}}" alt="" class="dropdown__icon" width="18px" height="27px">
+                                                                                <span>delete</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
+                                                            <div class="collapsed__div">
+                                                                <div class="row">
+                                                                    <div class="col">@lang('lang.city')</div>
+                                                                    <div class="col">@lang('lang.date')</div>
+                                                                    <div class="col">@lang('lang.package')</div>
+                                                                    <div class="col"></div>
+                                                                    <div class="col"></div>
+                                                                    <div class="col"></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">{{$row->city}}</div>
+                                                                    <div class="col">{{$row->created_at->diffForHumans()}}</div>
+                                                                    <div class="col">package name</div>
+                                                                    <div class="col"></div>
+                                                                    <div class="col"></div>
+                                                                    <div class="col"></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">@lang('lang.capital')</div>
+                                                                    <div class="col">@lang('lang.experience')</div>
+                                                                    <div class="col">@lang('lang.kitchen')</div>
+                                                                    <div class="col"></div>
+                                                                    <div class="col"></div>
+                                                                    <div class="col"></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">{{$row->capital}} sr</div>
+                                                                    <div class="col">{{$row->experience}} years</div>
+                                                                    <div class="col">
+                                                                        <span class="mr__26 flex__icons"><img src="{{ asset('images/p1.png')}}" alt="" class="part__icon"> {{$row->kind}}</span>
+                                                                    </div>
+                                                                    <div class="col"></div>
+                                                                    <div class="col"></div>
+                                                                    <div class="col"></div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="collapsed__div">
-                                                    <div class="row">
-                                                        <div class="col">@lang('lang.city')</div>
-                                                        <div class="col">@lang('lang.date')</div>
-                                                        <div class="col">@lang('lang.package')</div>
-                                                        <div class="col"></div>
-                                                        <div class="col"></div>
-                                                        <div class="col"></div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">{{$row->city}}</div>
-                                                        <div class="col">{{$row->created_at->diffForHumans()}}</div>
-                                                        <div class="col">package name</div>
-                                                        <div class="col"></div>
-                                                        <div class="col"></div>
-                                                        <div class="col"></div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">@lang('lang.capital')</div>
-                                                        <div class="col">@lang('lang.experience')</div>
-                                                        <div class="col">@lang('lang.kitchen')</div>
-                                                        <div class="col"></div>
-                                                        <div class="col"></div>
-                                                        <div class="col"></div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">{{$row->capital}} sr</div>
-                                                        <div class="col">{{$row->experience}} years</div>
-                                                        <div class="col">
-                                                            <span class="mr__26 flex__icons"><img src="{{ asset('images/p1.png')}}" alt="" class="part__icon"> {{$row->kind}}</span>
-                                                        </div>
-                                                        <div class="col"></div>
-                                                        <div class="col"></div>
-                                                        <div class="col"></div>
-                                                    </div>
-                                                    
-                                                </div>
-                                                
-                                            </div>
-                                        @endforeach
+                                                    @endforeach
 
-                                    @else
+                                                @else
 
-                                            <tr>
-                                                <td colspan="5" class="text-center">No Data Found</td>
-                                            </tr>
+                                                <tr>
+                                                    <td colspan="5" class="text-center">No Data Found</td>
+                                                </tr>
 
-                                    @endif
+                                                @endif
                                         </div>
                                     </div>
                                 </div>

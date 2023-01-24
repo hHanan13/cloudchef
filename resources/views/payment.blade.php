@@ -112,7 +112,7 @@
                     </div>
                     <div class="current_wrapper tab-pane fade in" role="tabpanel" id="bank__tab">
 
-                        <form action="{{route('banktransfer.store')}}" class="payment__form" method="post">
+                        <form action="{{route('banktransfer.store')}}" class="payment__form" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="bankAccounts__cloumn">
                                 <h3 class="mdpay_title">@lang('lang.Bank accounts')</h3>
