@@ -23,7 +23,6 @@ class banktransfer extends Model
     }//end of get image path
     public function scopeSearch($query, $term)
     {
-
         $term = "%$term";
         $query->where(function ($query) use ($term) {
             $query->where('name_ar', 'like', $term)

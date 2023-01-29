@@ -177,3 +177,7 @@ body{
       right: 0;
     }
   }
+
+  .down__absBtn {
+    right: 16px;
+  }

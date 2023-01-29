@@ -112,13 +112,24 @@ $('.show__confirm__modal').click(function () {
   $('.sec__proModal').removeClass('mfade__in');
   $('.confirmModal').addClass('mfade__in');
   $('body').addClass('overflow__hidden');
-})
+});
 
 $('input.check__input').on('change', function (e) {
   if ($('input.check__input:checked').length > 3) {
       $(this).prop('checked', false);
       alert("allowed only 2 choice for your kitchen");
   }
+});
+
+/*** terms & conditions modal   ***/
+$('.openTerms__modal').click(function () {
+  $('.terms__modal').addClass('mfade__in');
+  $('body').addClass('overflow__hidden');
+});
+
+$('.terms__overlay').click(function () {
+  $('.terms__modal').removeClass('mfade__in');
+  $('body').removeClass('overflow__hidden');
 });
 // dashboard nice select
 
@@ -136,7 +147,6 @@ $( "#calender__icon" ).click( function() {
   $('.datepicker-container').removeClass('datepicker-hide')
 });
 
-
 // dashboard datepicker
 // $( ".contacted_span" ).click( function(e) {
 //   e.stopPropagation();
@@ -145,10 +155,9 @@ $( "#calender__icon" ).click( function() {
 // });
 
 // dashboard datepicker
-$( ".collapse__table" ).click( function() {
- $(this).siblings('.collapsed__div').slideToggle('');
-});
-
+// $( ".collapse__table" ).click( function() {
+//  $(this).siblings('.collapsed__div').slideToggle('');
+// });
 
 // jobs page form
 $(document).ready(function(){
@@ -269,4 +278,12 @@ $('.modal__overlay').click(function () {
 
 
   });
+});
+
+
+$('#stepExample1').timepicker({ 'step': 1 });
+
+// open invoice form
+$( ".newCBtn" ).on('click', function() {
+ $('.newCustFrm_wrap').toggleClass('openCinform_wrap');
 });

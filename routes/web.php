@@ -12,6 +12,7 @@ use App\Http\Controllers\JobController;
 use App\Http\Controllers\BanktransferController;
 use App\Http\Controllers\BotManController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\TapController;
 
 
@@ -117,6 +118,7 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
     // })->name('home');
     
     Route::resource('home',DashboardController::class);
+    Route::resource('invoice',InvoiceController::class);
     Route::get('changeStatus', 'DashboardController@changeStatus');
     Route::get('report/{id}', '\App\Http\Controllers\ReportController@index');
     Route::get('report/{id}/delete',[ReportController::class,'destroy']);

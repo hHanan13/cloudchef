@@ -215,3 +215,7 @@ body{
     left: 0;
   }
 }
+
+.down__absBtn {
+  left: 16px;
+}

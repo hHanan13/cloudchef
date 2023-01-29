@@ -51,7 +51,7 @@ class BanktransferController extends Controller
             $banktransfer->save();
         }
 
-        return response()->json(['status' => 1, 'data' => $banktransfer]);
+        return redirect()->back()->with('message', 'Added successfully');   
 
 
         // $validated = $request->validate( [

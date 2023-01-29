@@ -204,6 +204,7 @@ return array(
     'App\\Models\\Download' => $baseDir . '/app/Models/Download.php',
     'App\\Models\\Education' => $baseDir . '/app/Models/Education.php',
     'App\\Models\\Favourite' => $baseDir . '/app/Models/Favourite.php',
+    'App\\Models\\Invoice' => $baseDir . '/app/Models/Invoice.php',
     'App\\Models\\ModelRole' => $baseDir . '/app/Models/ModelRole.php',
     'App\\Models\\Newsletter' => $baseDir . '/app/Models/Newsletter.php',
     'App\\Models\\Note' => $baseDir . '/app/Models/Note.php',

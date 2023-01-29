@@ -15,9 +15,6 @@
     font-size: 26px;
     margin-bottom: 30px;
   }
-  .my__navbar .nav-link {
-    margin-inline-end: 90px;
-  }
 }
 
 /*** large screens ***/
@@ -48,7 +45,7 @@
   }
   .my__navbar .nav-link {
     font-size: 19px;
-    margin-inline-end: 40px;
+    margin-inline-end: 36px;
   }
   .navbar-toggler {
     display: none;
@@ -149,6 +146,9 @@
     margin-bottom: 16px;
     justify-content: space-between;
   }
+  .absolute__Div {
+    display: none;
+  }
 }
 @media(max-width: 1699px) {
   .my__modal .close__modal {
@@ -185,6 +185,12 @@
 }
 /*** all mobile screens ***/
 @media(max-width: 991px) {
+  .dashboard__table {
+    width: 1200px;
+  }
+  .dashInvoice__table {
+    width: 800px;
+  }
   .my__modal {
     background-color: #F8F6EA;
   }
@@ -404,11 +410,14 @@
   .msrfImg img {
     width: 60%;
   }
-  .absolute__Div {
-    display: none;
-  }
   .servImgFluid {
     max-width: 90%;
+  }
+  .rltvInvoice__wrapper {
+    padding-top: 30px;
+  }
+  .newCustFrm_wrap {
+    top: 30px;
   }
 }
 
@@ -505,9 +514,6 @@
   .white__btn {
     margin-inline-end: 0;
     margin-bottom: 20px;
-  }
-  .dashboard__table {
-    width: 1200px;
   }
   .code__input {
     width: 60px;

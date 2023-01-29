@@ -1126,6 +1126,7 @@ class ComposerStaticInitd7f2a68a505519ccb03765fc2bbe0286
         'App\\Models\\Download' => __DIR__ . '/../..' . '/app/Models/Download.php',
         'App\\Models\\Education' => __DIR__ . '/../..' . '/app/Models/Education.php',
         'App\\Models\\Favourite' => __DIR__ . '/../..' . '/app/Models/Favourite.php',
+        'App\\Models\\Invoice' => __DIR__ . '/../..' . '/app/Models/Invoice.php',
         'App\\Models\\ModelRole' => __DIR__ . '/../..' . '/app/Models/ModelRole.php',
         'App\\Models\\Newsletter' => __DIR__ . '/../..' . '/app/Models/Newsletter.php',
         'App\\Models\\Note' => __DIR__ . '/../..' . '/app/Models/Note.php',

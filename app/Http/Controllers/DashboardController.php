@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\merchant;
 use App\Models\job;
-use App\Models\banktransfer;
 use Carbon\Carbon;
 
 class DashboardController extends Controller
@@ -26,7 +25,6 @@ class DashboardController extends Controller
         }
       
         $currentjobs= job::where('status',1)->latest()->paginate(5);
-        $bank= banktransfer::latest()->paginate(5);
         $trainingjobs= job::where('status',0)->latest()->paginate(5);
         return view('dashboard.home', compact('users','currentjobs','trainingjobs'));
     }
