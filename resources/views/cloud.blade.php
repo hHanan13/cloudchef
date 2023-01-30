@@ -183,7 +183,7 @@
                                 <label class="terms__label">
                                     <input type="checkbox" class="terms__check">
                                     <span class="agree__des">
-                                        @lang('lang.agree to the') <a href="{{ url('/conditions') }}" class="terms__link">@lang('lang.terms and conditions')</a>
+                                        @lang('lang.agree to the') <a href="#" class="terms__link openTerms__modal">@lang('lang.terms and conditions')</a>
                                     </span>
                                 </label>
                                  <button type="submit" class=" modal__btn next__btn">@lang('lang.next')</button>
@@ -392,7 +392,7 @@
                                             <label class="terms__label">
                                                 <input type="checkbox" class="terms__check" name="cond">
                                                 <span class="agree__des">
-                                                 @lang('lang.agree to the') <a href="{{ url('/conditions') }}" class="terms__link">@lang('lang.terms and conditions')</a>
+                                                 @lang('lang.agree to the') <a href="#" class="terms__link openTerms__modal">@lang('lang.terms and conditions')</a>
                                                 </span>
                                             </label>
                                             <span class="text-danger"> @error('cond') {{$message}} @enderror</span>

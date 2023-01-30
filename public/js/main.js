@@ -49,11 +49,12 @@ $('.show__started__modal').click(function () {
 })
 
 $('.close__modal').click(function () {
- $(this).parent('.my__modal').removeClass('mfade__in');
- $(this).parent('.reportModal').removeClass('mfade__in');
-  $('body').removeClass('overflow__hidden');
-})
-
+  $(this).parent('.my__modal').removeClass('mfade__in');
+  $(this).parent('.reportModal').removeClass('mfade__in');
+  $(this).parent('.terms__modal').removeClass('mfade__in');
+   $('body').removeClass('overflow__hidden');
+ })
+ 
 $('.my__modal').click(function () {
   $(this).removeClass('mfade__in');
    $('body').removeClass('overflow__hidden')
