@@ -132,6 +132,12 @@ $('.terms__overlay').click(function () {
   $('.terms__modal').removeClass('mfade__in');
   $('body').removeClass('overflow__hidden');
 });
+
+/*** video modal   ***/
+$('.play__video').click(function () {
+  $('.videoModal').addClass('mfade__in');
+  $('body').addClass('overflow__hidden');
+});
 // dashboard nice select
 
 $(document).ready(function() {

@@ -322,6 +322,31 @@ header {
   color: #DF4E3A;
   font-weight: 500;
 }
+.play__video {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #2B403B;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.play__video i {
+  font-size: 22px;
+  margin-inline-start: 10px;
+}
+.play__video:hover {
+  color: #DF4E3A;
+}
+.video__vh90{
+  padding: 20px;
+  height: 90vh;
+  width: 90%;
+  margin: auto;
+}
+.video__vh90 iframe{
+  height: 100%;
+  width: 100%;
+}
 .main__banner {
   position: relative;
 }
@@ -646,13 +671,49 @@ header {
   font-weight: 500;
   color: #E0D9BF;
 }
-footer {
+/* footer {
   padding: 114px 0 54px 0;
   color: #464646;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
   text-transform: capitalize;
+} */
+.footer {
+  margin-top: 70px;
+}
+.footer__wrapper {
+  padding: 60px 0;
+  color: #fff;
+  background-color: #2b403b;
+}
+.footer__logo, .footer__logo img {
+  display: block;
+  width: 90px;
+}
+.copyRights_wrap {
+  padding: 20px 0;
+  color: #464646;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+.footer__liksList {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  width: 100%
+}
+.footer__link {
+  display: block;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 18px;
+  margin-inline-end: 50px;
+}
+.footer__link:hover {
+  color: #DF4E3A;
 }
 
 /*** contct info modal ***/

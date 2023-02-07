@@ -32,7 +32,7 @@ Route::get('check_payment', '\App\Http\Controllers\Api\PaymentController@check_p
 Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentRequest')->name('pay.charge');
 Route::group(
     [
-        'prefix' => LaravelLocalization::setLocale(),
+        'prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale(),
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
     ], function () {
 
@@ -195,6 +195,14 @@ Route::post('storetraining',[JobController::class,'storetraining'])->name('jobs.
 Route::get('/conditions', function () {
     return view('conditions');
  })->name('conditions');
+
+ Route::get('/privacy', function () {
+    return view('privacy');
+ })->name('privacy');
+
+ Route::get('/bankaccount', function () {
+    return view('bankaccount');
+ })->name('bankaccount');
 
 Route::get('/cloud', function () {
     return view('livewire.cloud');

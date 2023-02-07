@@ -15,6 +15,20 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
+            $table->string('client_name');
+            $table->string('phone');
+            $table->string('brand_name');
+            $table->string('city');
+            $table->string('email');
+            $table->string('website');
+            $table->string('date');
+            $table->string('clock');
+            $table->string('product');
+            $table->string('quantity');
+            $table->string('price');
+            $table->string('discount');
+            $table->string('final_price');
+            $table->string('notes');
             $table->timestamps();
         });
     }

@@ -7,6 +7,8 @@
         <div class="brand__cloud wow fadeInLeft" data-wow-offet="100" data-wow-duration="2s">
             <h2>@lang('lang.Now You Can')</h2>
             <h3>@lang('lang.And If You Have A Kitchen')</h3>
+            <a href="#" class="play__video"> how it works <i class="fa-regular fa-circle-play"></i> </a>
+
         </div>
         <div class="main__banner wow fadeInRight" data-wow-offet="100" data-wow-duration="2s">
             <img src="{{ asset('/images/header.png') }}" alt="" class="banner__img">
