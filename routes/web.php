@@ -128,7 +128,6 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
     // Route::get('report/{id}/edit',[ReportController::class,'edit']);
     Route::put('edit/{id}',[ReportController::class,'update']);
 
-
     Route::get('search',[DashboardController::class,'search']);
 
     // Route::get('/home', function () {
