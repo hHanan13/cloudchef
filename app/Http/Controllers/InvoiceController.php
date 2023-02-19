@@ -33,4 +33,28 @@ class InvoiceController extends Controller
         return view('dashboard.home', compact('invoices'));
 
     }
+
+    public function store(Request $request){
+        
+        $validated = $request->validate( [
+            'client_name' => 'required|string',
+            'email' => 'required|email|unique:jobs',
+            'brand_name' => 'required',
+            'phone' => 'required',
+            'website' => 'required',
+            'city' => 'required',
+        ]);
+
+        $user= new Invoice;
+         $user->client_name = $request->client_name;
+         $user->email = $request->email;
+         $user->city = $request->city;
+         $user->brand_name = $request->brand_name;
+         $user->phone = $request->phone;
+         $user->website = $request->website; 
+         //$user->status = '1';
+         
+        $user->save();
+        return redirect()->back()->with('message', 'Invoice Added'); 
+    }
 }

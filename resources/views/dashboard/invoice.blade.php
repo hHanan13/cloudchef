@@ -19,7 +19,9 @@
                                     <div class="invoiceWrapper">
                                         <div class="myFlex__row">
                                             <div class="col-12 col-lg-5">
-                                                <form action="" class="search__form">
+                                                <form action="{{ route('invoices.store') }}" class="search__form" method="Post" enctype="multipart/form-data">
+                                                    @csrf
+
                                                     <div class="form__group mb__14">
                                                         <input type="password" placeholder="E-mail" class="form-control">
                                                         <button type="submit" class="submit__btn">

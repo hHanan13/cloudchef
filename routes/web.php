@@ -119,6 +119,7 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
     
     Route::resource('home',DashboardController::class);
     Route::resource('invoice',InvoiceController::class);
+    Route::post('storeinvoice',[InvoiceController::class,'store'])->name('invoices.store');
     Route::get('changeStatus', 'DashboardController@changeStatus');
     Route::get('report/{id}', '\App\Http\Controllers\ReportController@index');
     Route::get('report/{id}/delete',[ReportController::class,'destroy']);
@@ -129,7 +130,13 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
     Route::put('edit/{id}',[ReportController::class,'update']);
 
     Route::get('search',[DashboardController::class,'search']);
-
+    Route::get('/sales', function () {
+            return view('dashboard.sales');
+         })->name('sales');
+         
+         Route::get('/add_report', function () {
+            return view('dashboard.add_report');
+         })->name('add_report');
     // Route::get('/home', function () {
     //     return view('dashboard.home');
     // })->name('home');

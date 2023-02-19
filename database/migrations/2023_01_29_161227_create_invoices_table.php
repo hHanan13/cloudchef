@@ -29,6 +29,7 @@ return new class extends Migration
             $table->string('discount');
             $table->string('final_price');
             $table->string('notes');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
