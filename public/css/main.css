@@ -2552,6 +2552,7 @@ header {
   width: 240px;
   height: 70px;
   background-color: #2B403B;
+  border: none;
   border-radius: 46px 6px 6px 46px;
   display: flex;
   justify-content: center;
@@ -2566,6 +2567,9 @@ header {
 }
 .invoice__link:hover {
   color: #fff;
+}
+.mt__40 {
+  margin-top: 40px;
 }
 /*** start invoice page ***/
 .invoiceWrapper {
@@ -2601,7 +2605,7 @@ header {
 .print__link {
   margin-inline-end: 60px;
 }
-.newCBtn {
+.newCBtn, .specFCBtn {
   display: block;
   color: #DF4E3A;
   font-weight: 500;
@@ -2621,6 +2625,10 @@ label.mdFtitle {
   font-weight: 500;
   margin-inline-end: 0;
   margin-bottom: 16px;
+  text-transform: lowercase;
+}
+label.mdFtitle::first-letter {
+  text-transform: capitalize;
 }
 .timeCol_relative {
   position: relative;
@@ -2814,4 +2822,8 @@ label.mdFtitle {
   right: 0;
   width: 100%;
   height: 100%;
+}
+.inv__mdTitle {
+  color: rgba(43, 64, 59, 0.45);
+  font-size: 22px;
 }

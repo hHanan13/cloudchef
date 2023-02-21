@@ -7,6 +7,7 @@ use App\Http\Controllers\PerfumeController;
 use App\Http\Controllers\NotificationsController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\MerchantController;
+use App\Http\Controllers\Api\CheckoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\BanktransferController;
@@ -130,6 +131,7 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
     Route::put('edit/{id}',[ReportController::class,'update']);
 
     Route::get('search',[DashboardController::class,'search']);
+    Route::get('search',[InvoiceController::class,'search']);
     Route::get('/sales', function () {
             return view('dashboard.sales');
          })->name('sales');
@@ -137,6 +139,22 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
          Route::get('/add_report', function () {
             return view('dashboard.add_report');
          })->name('add_report');
+
+         Route::get('/dashboard_marketing', function () {
+            return view('dashboard.dash_marketing');
+         })->name('dash_marketing');
+
+         Route::get('/offer', function () {
+            return view('dashboard.offer');
+         })->name('offer');
+
+         Route::get('/specific_client', function () {
+            return view('dashboard.offer_specific_client');
+         })->name('specific_client');
+
+         Route::get('/new', function () {
+            return view('dashboard.new');
+         })->name('new');
     // Route::get('/home', function () {
     //     return view('dashboard.home');
     // })->name('home');

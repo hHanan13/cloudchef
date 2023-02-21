@@ -59,11 +59,11 @@
                             <a class="nav-link sidebar__link" href="{{ LaravelLocalization::getLocalizedURL('en') }}">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
-            @else
-            <a class="nav-link sidebar__link" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
-                                <i class="fa-solid fa-globe"></i>
-                            </a>
-            @endif
+                            @else
+                            <a class="nav-link sidebar__link" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
+                                                <i class="fa-solid fa-globe"></i>
+                                            </a>
+                            @endif
                             
                         </div>
                     </div>

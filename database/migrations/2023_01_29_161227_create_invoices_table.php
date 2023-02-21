@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('client_name');
             $table->string('phone');
             $table->string('brand_name');
+            $table->string('num_emp');
+            $table->string('num_branch');
             $table->string('city');
             $table->string('email');
             $table->string('website');

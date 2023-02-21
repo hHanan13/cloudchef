@@ -41,6 +41,8 @@ class InvoiceController extends Controller
             'email' => 'required|email|unique:jobs',
             'brand_name' => 'required',
             'phone' => 'required',
+            'num_branch' => 'required',
+            'num_emp' => 'required',
             'website' => 'required',
             'city' => 'required',
         ]);
@@ -50,6 +52,8 @@ class InvoiceController extends Controller
          $user->email = $request->email;
          $user->city = $request->city;
          $user->brand_name = $request->brand_name;
+         $user->num_branch = $request->num_branch;
+         $user->num_emp = $request->num_emp;
          $user->phone = $request->phone;
          $user->website = $request->website; 
          //$user->status = '1';
