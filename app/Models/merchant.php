@@ -104,7 +104,7 @@ class merchant extends Authenticatable
         $term="%$term";
         $query->where(function ($query) use($term){
             $query->where('email','like',$term)
-                ->OrWhere('merchant_name','like',$term);
+                ->OrWhere('name','like',$term);
         });
     }
 

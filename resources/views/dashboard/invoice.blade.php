@@ -74,7 +74,7 @@
                                 <div class="dashtop__flex">
                                     <div class="col-12 col-lg-6 col-xl-3">
                                         <div class="form__group">
-                                            <input type="text" placeholder="@lang('lang.search')..." name="search" value="{{ request()->get('search') }}" class="form-control">
+                                            <input type="text" placeholder="@lang('lang.search')..." name="" value="" class="form-control">
                                             <button type="submit" class="submit__btn">
                                                 <i class="fa-solid fa-magnifying-glass search__icon"></i>
                                             </button>
@@ -151,55 +151,57 @@
                                                         </button>
                                                     </div>
                                                 </form>
-                                                <form action="#" method="Post" enctype="multipart/form-data">
+                                                <form action="{{ url('admin/storeinvo') }}" method="Post" enctype="multipart/form-data" class="register__form">
+                                                    
+                                                                @csrf
                                                     <a href="#" class="newCBtn">+ Add a new customer</a>
                                                     <label class="mdFtitle">Date created</label>
                                                     <div class="myFlex__row mb__20">
                                                         <div class="timeCol_relative w__70">
                                                             <i class="fa-solid fa-chevron-down down__absBtn"></i>
-                                                            <input class="datepicker timeInput_md" data-date-format="mm/dd/yyyy" placeholder="20/02/2022">
+                                                            <input class="datepicker timeInput_md" name="date" data-date-format="mm/dd/yyyy" placeholder="20/02/2022">
                                                         </div>
                                                         <div class="timeCol_relative w__25">      
-                                                            <input class="timeInput_small dashboard__select timeInput_md" id="stepExample1" placeholder="9:00 PM">
+                                                            <input class="timeInput_small dashboard__select timeInput_md" name="clock" id="stepExample1" placeholder="9:00 PM">
                                                         </div>
                                                     </div>
                                                     <label class="mdFtitle">add a product</label>
-                                                    <select class="nice-select dashboard__select timeInput_md mb__20">
+                                                    <select class="nice-select dashboard__select timeInput_md mb__20" name="product">
                                                         <option value="all" selected>Emerging Restaurant Package</option>
                                                         <option value="one">one</option>
                                                         <option value="two">two</option>
                                                         <option value="three">three</option>
                                                     </select>
                                                     <label class="mdFtitle">Quantity</label>
-                                                    <input type="text" placeholder="0" class="form-control mb__20">
+                                                    <input type="text" name="quantity" placeholder="0" class="form-control mb__20">
                                                     <div class="myFlex__row mb__20">
                                                         <div class="w__70">
                                                             <label class="mdFtitle">price</label>
                                                             <div class="timeCol_relative">
                                                                 <span class="down__absBtn">SR</span>
-                                                                <input type="text" class="dashboard__select timeInput_md" placeholder="2000">
+                                                                <input type="text" name="price" class="dashboard__select timeInput_md" placeholder="2000">
                                                             </div>
                                                         </div>
                                                         <div class="w__25">
                                                             <label class="mdFtitle">discount</label> 
                                                             <div class="timeCol_relative">
                                                                 <span class="down__absBtn">%</span>
-                                                                <input type="text" class="dashboard__select timeInput_md" placeholder="10">
+                                                                <input type="text" name="discount" class="dashboard__select timeInput_md" placeholder="10">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <label class="mdFtitle">final price</label>
                                                     <div class="timeCol_relative">
                                                         <span class="down__absBtn">SR</span>
-                                                        <input type="text" class="dashboard__select timeInput_md mb__20 input__bold" placeholder="1800">
+                                                        <input type="text" name="final_price" class="dashboard__select timeInput_md mb__20 input__bold" placeholder="1800">
                                                     </div>
                                                     <div class="relative__textarea areaWidth__100">
-                                                        <textarea class="jobs__textarea invoice__textarea" placeholder="Notes" maxlength="100"></textarea>
+                                                        <textarea class="jobs__textarea invoice__textarea" name="notes" placeholder="Notes" maxlength="100"></textarea>
                                                         <div class="abs__value">
                                                             <span class="number__increase">0</span> / <span>100</span>
                                                         </div>
                                                     </div>
-                                                    <button type="s" href="news.html" class="invoice__link mt__40">
+                                                    <button type="submit" class="invoice__link mt__40">
                                                         <img src="{{ asset('images/invoice.svg') }}" alt="">
                                                         create invoice
                                                     </button>
@@ -207,15 +209,15 @@
                                             </div>
                                             <div class="col-12 col-lg-7">
                                                 <div class="rltvInvoice__wrapper">
-                                                    @if(count($invoices) > 0)
+                                                    @if(count($clients) > 0)
 
-                                                        @foreach($invoices as $row)
+                                                        @foreach($clients as $row)
                                                             <!--row one-->
                                                             <div class="invoice__details">
                                                                 <div class="myFlex__row">
                                                                     <div class="col-12 col-md-6 col-xl-4 invoice_col">
                                                                         <label class="inovice_label">name</label>
-                                                                        <span class="invoice__info">{{$row->client_name}}</span>
+                                                                        <span class="invoice__info">{{$row->name}}</span>
                                                                     </div>
                                                                     <div class="col-12 col-md-6 col-xl-4 invoice_col">
                                                                         <label class="inovice_label">number</label>
@@ -227,7 +229,7 @@
                                                                     </div>
                                                                     <div class="col-12 col-md-6 col-xl-4 invoice_col">
                                                                         <label class="inovice_label">brand name</label>
-                                                                        <span class="invoice__info">{{$row->brand_name}}</span>
+                                                                        <span class="invoice__info">{{$row->store_name}}</span>
                                                                     </div>
                                                                     <div class="col-12 col-md-6 col-xl-4 invoice_col">
                                                                         <label class="inovice_label">city</label>
@@ -258,7 +260,7 @@
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
                                                                         <label for="" class="abs__label">name</label>
-                                                                        <input type="text" name="client_name" placeholder="Raana Elnbawy" class="form-control">
+                                                                        <input type="text" name="name" placeholder="Raana Elnbawy" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-lg-6">
@@ -270,7 +272,7 @@
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
                                                                         <label for="" class="abs__label">brand name</label>
-                                                                        <input type="text" name="brand_name" placeholder="brand name" class="form-control">
+                                                                        <input type="text" name="store_name" placeholder="brand name" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-lg-6">
@@ -300,7 +302,7 @@
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
                                                                         <label for="" class="abs__label">number of branches</label>
-                                                                        <input type="text" name="num_branch" placeholder="number of branches" class="form-control">
+                                                                        <input type="text" name="num_branches" placeholder="number of branches" class="form-control">
                                                                     </div>
                                                                 </div>
                                                             </div>

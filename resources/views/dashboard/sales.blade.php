@@ -33,7 +33,7 @@
                                     </div>
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -51,7 +51,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -69,7 +69,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -87,7 +87,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -105,7 +105,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -123,7 +123,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -157,7 +157,7 @@
                                     </div>
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -175,7 +175,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -193,7 +193,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -211,7 +211,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -229,7 +229,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>
@@ -247,7 +247,7 @@
                                     </a>  
                                 </div>
                                 <div class="twrapper table__row">
-                                    <a href="add_report.html">
+                                    <a href="{{ url('/admin/add_report') }}">
                                         <div class="row collapse__table">
                                             <div class="col">ahmed hassan</div>
                                             <div class="col">ahmed</div>

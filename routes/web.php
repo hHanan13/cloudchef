@@ -121,6 +121,7 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
     Route::resource('home',DashboardController::class);
     Route::resource('invoice',InvoiceController::class);
     Route::post('storeinvoice',[InvoiceController::class,'store'])->name('invoices.store');
+    Route::post('storeinvo',[InvoiceController::class,'storeinvoice'])->name('invoice.store');
     Route::get('changeStatus', 'DashboardController@changeStatus');
     Route::get('report/{id}', '\App\Http\Controllers\ReportController@index');
     Route::get('report/{id}/delete',[ReportController::class,'destroy']);

@@ -36,6 +36,7 @@ return new class extends Migration
             $table->string('rate');
             $table->string('count_in_rate');
             $table->integer('star_rating');
+            $table->boolean('invoice_status')->default(1)->nullable();
             $table->boolean('status')->default(1)->nullable();
             $table->boolean('contact')->default(1)->nullable();
             $table->timestamps();
