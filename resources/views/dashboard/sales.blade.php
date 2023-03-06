@@ -9,12 +9,12 @@
                 <ul class="nav nav-pills dash__inner__pills">
                     <li class="nav-item">
                         <a class="nav-link active" href="#current_wrapper" data-toggle="tab">
-                            New Restaurant (40)
+                            New Restaurant ({{\App\Models\merchant::where('status', '0')->count()}})
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#collaborative_orders" data-toggle="tab">
-                            Professional Restaurant (08)
+                            Professional Restaurant ({{\App\Models\merchant::where('status', '1')->count()}})
                         </a>
                     </li>
                 </ul>
@@ -22,124 +22,59 @@
                     <div class="current_wrapper tab-pane fade in active show" role="tabpanel" id="current_wrapper">
                         <div class="table__wrapper">
                             <div class="dashboard__table">
-                                <div class="thead">
-                                    <div class="row">
-                                        <div class="col">name</div>
-                                        <div class="col">trade name</div>
-                                        <div class="col">email</div>
-                                        <div class="col">number</div>
-                                        <div class="col"></div>
-                                        <div class="col-1"></div>
-                                    </div>
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span active__color"> contacted </span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
+                                                <div class="thead">
+                                                    <div class="row">
+                                                        <div class="col">name</div>
+                                                        <div class="col">trade name</div>
+                                                        <div class="col">email</div>
+                                                        <div class="col">number</div>
+                                                        <div class="col"></div>
+                                                        <div class="col-1"></div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span">waiting...</span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span active__color"> contacted </span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span">waiting...</span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span active__color"> contacted </span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span">waiting...</span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
+                                                    @if(count($newrest) > 0)
+
+                                                        @foreach($newrest as $row)
+                                                            <!--row one-->
+                                                            <div class="twrapper table__row">
+                                                                    <div class="row collapse__table">
+                                                                        <div class="col">{{$row->name}}</div>
+                                                                        <div class="col">{{$row->store_name}}</div> 
+                                                                        <div class="col">{{$row->email}}</div> 
+                                                                        <div class="col">{{$row->phone}}</div>
+                                                                        <div class="col">
+                                                                            @if($row->contact == true)         
+                                                                                <span class="contacted_span active__color">contacted</span>         
+                                                                            @else
+                                                                            <a href="{{ url('admin/restaurant/'.$row->id.'/contact')}}" onclick="confirm('Are you sure?') || event.stopImmediatePropagation()" ><span class="contacted_span">waiting...</span>  </a>  
+                                                                            @endif   
+                                                                        </div>
+                                                                        <div class="col-1">
+                                                                            <div class="dropdown dashboard__dropdown">
+                                                                                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                                                                    <i class="fa-solid fa-ellipsis dots__icon"></i>
+                                                                                </button>
+                                                                                <div class="dropdown-menu">
+                                                                                    <a class="dropdown-item open__report__wrapper" href="{{ url('/admin/report',$row->id) }}">
+                                                                                        <img src="{{ asset('images/report.svg')}}" alt="" class="dropdown__icon" width="20px" height="27px">
+                                                                                        <span>report</span>
+                                                                                    </a>
+                                                                                   
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                            </div>
+                                                        @endforeach
+
+                                                    @else
+
+                                                            <tr>
+                                                                <td colspan="5" class="text-center">No Data Found</td>
+                                                            </tr>
+
+                                                    @endif
+                                                    
                             </div>
                         </div>
                     </div>
@@ -156,114 +91,42 @@
                                         <div class="col-1"></div>
                                     </div>
                                 </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span active__color"> contacted </span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
+                                @if(count($prorest) > 0)
+
+                                    @foreach($prorest as $row)
+                                        <!--row one-->
+                                        <div class="twrapper table__row">
+                                                <div class="row collapse__table">
+                                                    <div class="col">{{$row->name}}</div>
+                                                    <div class="col">{{$row->store_name}}</div>
+                                                    <div class="col">{{$row->email}}</div>
+                                                    <div class="col">{{$row->phone}}</div>
+                                                    <div class="col">
+                                                        @if($row->contact == true)         
+                                                            <span class="contacted_span active__color">contacted</span>         
+                                                        @else
+                                                        <a href="{{ url('admin/restaurant/'.$row->id.'/contact')}}" onclick="confirm('Are you sure?') || event.stopImmediatePropagation()" ><span class="contacted_span">waiting...</span> </a>      
+                                                        @endif    
+                                                    </div>                                                
+                                                    <div class="col-1">
+                                                        <div class="dropdown dashboard__dropdown">
+                                                            <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                                                <i class="fa-solid fa-ellipsis dots__icon"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
                                         </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span">waiting...</span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span active__color"> contacted </span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span">waiting...</span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span active__color"> contacted </span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
-                                <div class="twrapper table__row">
-                                    <a href="{{ url('/admin/add_report') }}">
-                                        <div class="row collapse__table">
-                                            <div class="col">ahmed hassan</div>
-                                            <div class="col">ahmed</div>
-                                            <div class="col">example@gmail.com</div>
-                                            <div class="col">0000 000 000 000</div>
-                                            <div class="col"><span class="contacted_span">waiting...</span></div>
-                                            <div class="col-1">
-                                                <div class="dropdown dashboard__dropdown">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis dots__icon"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>  
-                                </div>
+                                    @endforeach
+
+                                @else
+
+                                        <tr>
+                                            <td colspan="5" class="text-center">No Data Found</td>
+                                        </tr>
+
+                                @endif
+                                
                             </div>
                         </div>
                     </div>

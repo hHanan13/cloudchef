@@ -84,7 +84,7 @@ class InvoiceController extends Controller
         $user= new Invoice;
          $user->date = $request->date;
          $user->clock = $request->clock;
-         $user->product = $request->product;
+         $user->product = $request->product;  
          $user->quantity = $request->quantity;
          $user->notes = $request->notes;
          

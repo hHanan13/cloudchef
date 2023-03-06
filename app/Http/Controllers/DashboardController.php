@@ -23,7 +23,8 @@ class DashboardController extends Controller
         {
             $users = merchant::get();
         }
-      
+        $prorest= merchant::where('status',1)->latest()->paginate(5);
+        $newrest= merchant::where('status',0)->latest()->paginate(5);
         $currentjobs= job::where('status',1)->latest()->paginate(5);
         $trainingjobs= job::where('status',0)->latest()->paginate(5);
         return view('dashboard.home', compact('users','currentjobs','trainingjobs'));

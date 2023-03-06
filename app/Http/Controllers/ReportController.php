@@ -15,7 +15,7 @@ class ReportController extends Controller
             ->with('reportData')
             ->first();
       
-        return view('dashboard.report', compact('reports'));
+        return view('dashboard.add_report', compact('reports'));
     }
 
     public function bymerchant(Request $request)

@@ -11,31 +11,23 @@
                          <!--row one-->
                          <div class="twrapper table__row">
                             <div class="row collapse__table">
-                                <div class="col">ahmed hassan</div>
-                                <div class="col">ahmed</div>
-                                <div class="col">example@gmail.com</div>
-                                <div class="col">0000 000 000 000</div>
-                                <div class="col"><span class="contacted_span active__color"> contacted </span></div>
+                                <div class="col">{{$reports->name}}</div>
+                                <div class="col">{{ $reports->store_name }}</div>
+                                <div class="col">{{$reports->email}}</div>
+                                <div class="col">{{$reports->phone}}</div>
+                                <div class="col">
+                                    @if($reports->contact == true)         
+                                    <span class="contacted_span active__color">contacted</span>         
+                                @else
+                                <a href="{{ url('admin/report/'.$reports->id.'/contact')}}"><span class="contacted_span">waiting...</span> </a>     
+                                @endif  
+                                </div>
                                 <div class="col-1">
                                     <div class="dropdown dashboard__dropdown">
                                         <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                                             <i class="fa-solid fa-ellipsis dots__icon"></i>
                                         </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item open__report__wrapper" href="report.html">
-                                                <img src="img/report.svg" alt="" class="dropdown__icon" width="20px" height="27px">
-                                                <span>report</span>
-                                            </a>
-                                            <a class="dropdown-item" href="index.html">
-                                                <img src="img/envelope.svg" alt="" class="dropdown__icon" width="20px" height="18px">
-                                                <span>email</span>
-                                            </a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item delete__dashrow has__function" href="#">
-                                                <img src="img/trash.svg" alt="" class="dropdown__icon" width="18px" height="27px">
-                                                <span>delete</span>
-                                            </a>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -49,9 +41,9 @@
                                     <div class="col"></div>
                                 </div>
                                 <div class="row">
-                                    <div class="col">saudi arabia</div>
-                                    <div class="col">20/2/2022</div>
-                                    <div class="col">package name</div>
+                                    <div class="col">{{$reports->city}}</div>
+                                    <div class="col">{{$reports->date}}</div>
+                                    <div class="col">{{$reports->packages}}</div>
                                     <div class="col"></div>
                                     <div class="col"></div>
                                     <div class="col"></div>
@@ -65,8 +57,8 @@
                                     <div class="col"></div>
                                 </div>
                                 <div class="row">
-                                    <div class="col">12 000 sr</div>
-                                    <div class="col">2 years</div>
+                                    <div class="col">{{$reports->capital}}</div>
+                                    <div class="col">{{$reports->experience}}</div>
                                     <div class="col">
                                         <span class="mr__26 flex__icons"><img src="img/p1.png" alt="" class="part__icon"> party</span>
                                         <span class="flex__icons"><img src="img/p2.png" alt="" class="part__icon"> pastry</span>

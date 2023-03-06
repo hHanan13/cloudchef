@@ -14,6 +14,7 @@ use App\Http\Controllers\BanktransferController;
 use App\Http\Controllers\BotManController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\SalesController;
 use App\Http\Controllers\TapController;
 
 
@@ -120,6 +121,9 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
     
     Route::resource('home',DashboardController::class);
     Route::resource('invoice',InvoiceController::class);
+    Route::resource('sales',SalesController::class);
+    Route::get('restaurant/{id}/contact',[SalesController::class,'contact']);
+
     Route::post('storeinvoice',[InvoiceController::class,'store'])->name('invoices.store');
     Route::post('storeinvo',[InvoiceController::class,'storeinvoice'])->name('invoice.store');
     Route::get('changeStatus', 'DashboardController@changeStatus');
@@ -133,10 +137,7 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
 
     Route::get('search',[DashboardController::class,'search']);
     Route::get('search',[InvoiceController::class,'search']);
-    Route::get('/sales', function () {
-            return view('dashboard.sales');
-         })->name('sales');
-         
+ 
          Route::get('/add_report', function () {
             return view('dashboard.add_report');
          })->name('add_report');
