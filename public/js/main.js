@@ -162,9 +162,9 @@ $( "#calender__icon" ).click( function() {
 // });
 
  //dashboard datepicker
-//  $( ".collapse__table" ).click( function() {
-//   $(this).siblings('.collapsed__div').slideToggle('');
-//  });
+ $( ".collapse__table" ).click( function() {
+  $(this).siblings('.collapsed__div').slideToggle('');
+ });
 
 // jobs page form
 $(document).ready(function(){

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\merchant;
 use App\Models\report;
 use Carbon\Carbon;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ReportController extends Controller
 {

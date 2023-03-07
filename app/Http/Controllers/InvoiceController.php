@@ -104,4 +104,11 @@ class InvoiceController extends Controller
         $user->save();
         return redirect()->back()->with('message', 'Invoice Added'); 
     }
+
+    public function getPdf($id=null)
+     {
+            $invoice = PDF::loadView('pdf.pdf_bill',array('name'=>$id));
+            return $invoice->stream();
+
+        }
 }

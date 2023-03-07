@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('merchant_id');
             $table->string('client_name');
             $table->string('phone');
             $table->string('brand_name');
@@ -32,6 +33,7 @@ return new class extends Migration
             $table->string('final_price');
             $table->string('notes');
             $table->string('status')->nullable();
+            $table->foreign('merchant_id')->references('id')->on('merchants')->onDelete('cascade');
             $table->timestamps();
         });
     }

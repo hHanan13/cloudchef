@@ -11,6 +11,11 @@ class Invoice extends Model
     protected $table = 'invoices';
     protected $fillable = ['client_name', 'phone', 'brand_name', 'city', 'email', 'website', 'date', 'clock', 'product', 'quantity', 'price', 'discount', 'final_price', 'notes'];
 
+    public function merchantData()
+    {
+    return $this->belongsTo(merchant::class);
+    }
+    
     public function scopeSearch($query,$term){
 
         $term="%$term";

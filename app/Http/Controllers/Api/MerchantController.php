@@ -204,6 +204,7 @@ class MerchantController extends Controller
             'start' => $request['start'],
             'end' => $request['end'],
             'status'=>0,
+            'packages'=>'Emerging Restaurant Package',
         ]);
 
         $User->save();
@@ -248,6 +249,7 @@ class MerchantController extends Controller
             'start' => $request['start'],
             'end' => $request['end'],
             'status'=>1,
+            'packages'=>'Professional Restaurant Package',
         ]);
 
         $User->save();

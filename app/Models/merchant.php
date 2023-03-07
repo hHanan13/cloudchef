@@ -28,7 +28,11 @@ class merchant extends Authenticatable
     {
         return $this->hasMany(report::class,'merchant_id' , 'id');
     }
-    
+    public function invoiceData()
+    {
+        return $this->hasMany(Invoice::class,'merchant_id' , 'id');
+    }
+
       public function getIsFollowedAttribute() {
             if(Auth::guard('api')->user()){
                 $obj = following::where('follwer_id',auth()->guard('api')->user()->id)->where('following_id',$this->id)->first();
