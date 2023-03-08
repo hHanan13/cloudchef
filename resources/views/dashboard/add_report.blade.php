@@ -87,8 +87,8 @@
                                 <div class="col-4">{{$reports->packages}}</div>
                                 <div class="col-2">
                                     <div class="printDwnFlx">
-                                        <a href="#" class="crt-nav__link prntBk__link"><img src="{{ asset('images/prnt.svg')}}" alt=""></a>
-                                        <a href="#" class="crt-nav__link" download><img src="{{ asset('images/dwn.svg')}}" alt=""></a>
+                                        <a href="{{ url('admin/export-reports/' .$reports->id) }}" class="crt-nav__link prntBk__link"><img src="{{ asset('images/prnt.svg')}}" alt=""></a>
+                                        <a href="{{ url('/admin/report',$reports->merchant_id) }}" class="crt-nav__link" download><img src="{{ asset('images/dwn.svg')}}" alt=""></a>
                                     </div>
                                 </div>
                             </div>

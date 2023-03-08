@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '7eb2921d5607742dcfd23de94572234a158de7f9',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '0680bbff5f7123ba8ef63ad2e2c218d61523cca1',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -581,9 +581,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '7eb2921d5607742dcfd23de94572234a158de7f9',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '0680bbff5f7123ba8ef63ad2e2c218d61523cca1',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -773,9 +773,9 @@
             ),
         ),
         'maatwebsite/excel' => array(
-            'pretty_version' => '3.1.45',
-            'version' => '3.1.45.0',
-            'reference' => '80627071a8cebb3c1119f1d2881bb6a03a8f9152',
+            'pretty_version' => '3.1.48',
+            'version' => '3.1.48.0',
+            'reference' => '6d0fe2a1d195960c7af7bf0de760582da02a34b9',
             'type' => 'library',
             'install_path' => __DIR__ . '/../maatwebsite/excel',
             'aliases' => array(),

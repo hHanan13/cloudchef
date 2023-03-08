@@ -7,9 +7,17 @@ use App\Models\merchant;
 use App\Models\report;
 use Carbon\Carbon;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\ImportReport;
+use App\Exports\ExportReport;
 
 class ReportController extends Controller
 {
+    protected $patienId;
+
+    public function __construct(merchant $patienId){
+        $this->patietId = $patienId;
+    }
+
     public function index(Request $request)
     {
             $reports = merchant::where('id' , $request->id)
@@ -17,6 +25,12 @@ class ReportController extends Controller
             ->first();
       
         return view('dashboard.add_report', compact('reports'));
+    }
+
+    public function exportReports(merchant $merchant){
+
+        // $data = report::find($patienId);
+        return Excel::download(new ExportReport($merchant), 'reports.xlsx');
     }
 
     public function bymerchant(Request $request)

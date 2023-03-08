@@ -124,6 +124,8 @@ Route::post('/charge', '\App\Http\Controllers\Api\PaymentController@PaymentReque
     Route::resource('sales',SalesController::class);
     Route::get('restaurant/{id}/contact',[SalesController::class,'contact']);
 
+    Route::get('export-reports/{id}',[ReportController::class,'exportReports'])->name('export-reports');
+
     Route::post('storeinvoice',[InvoiceController::class,'store'])->name('invoices.store');
     Route::post('storeinvo',[InvoiceController::class,'storeinvoice'])->name('invoice.store');
     Route::get('changeStatus', 'DashboardController@changeStatus');
