@@ -13,6 +13,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        
                         <a class="nav-link" href="#collaborative_orders" data-toggle="tab">
                             Professional Restaurant ({{\App\Models\merchant::where('status', '1')->count()}})
                         </a>
