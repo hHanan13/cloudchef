@@ -269,6 +269,7 @@ class PowerGridComponent extends Component
             $this->total = $results->total();
         }
 
+        /** @phpstan-ignore-next-line  */
         return $results->setCollection($this->transform($results->getCollection()));
     }
 
@@ -326,6 +327,7 @@ class PowerGridComponent extends Component
             $collection = collect($results->items());
         }
 
+        /** @phpstan-ignore-next-line  */
         $collection->each(function ($model) {
             $id    = strval($model->{$this->primaryKey});
 
@@ -416,7 +418,6 @@ class PowerGridComponent extends Component
 
     private function renderView(mixed $data): Application|Factory|View
     {
-        /** @phpstan-ignore-next-line */
         return view($this->powerGridTheme->layout->table, [
             'data'  => $data,
             'theme' => $this->powerGridTheme,
@@ -478,7 +479,7 @@ class PowerGridComponent extends Component
     private function applySoftDeletes(Eloquent\Builder $results): Eloquent\Builder
     {
         throw_if(
-            $this->softDeletes && !in_array(SoftDeletes::class, class_uses(get_class($results->getModel())), true), /** @phpstan-ignore-line */
+            $this->softDeletes && !in_array(SoftDeletes::class, class_uses(get_class($results->getModel())), true),
             new Exception(get_class($results->getModel()) . ' is not using the \Illuminate\Database\Eloquent\SoftDeletes trait')
         );
 
@@ -511,7 +512,7 @@ class PowerGridComponent extends Component
     protected function powerGridListeners(): array
     {
         return [
-            'pg:datePicker-' . $this->tableName   => 'datePikerChanged',
+            'pg:datePicker-' . $this->tableName   => 'datePickerChanged',
             'pg:editable-' . $this->tableName     => 'inputTextChanged',
             'pg:toggleable-' . $this->tableName   => 'toggleableChanged',
             'pg:multiSelect-' . $this->tableName  => 'multiSelectChanged',
