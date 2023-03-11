@@ -20,7 +20,6 @@
                     </li>
                 </ul>
                 <div class="tab-content"  id="myTabinner">
-                    
                     <div class="current_wrapper tab-pane fade in active show" role="tabpanel" id="current_wrapper">
                         <div class="table__wrapper">
                             <div class="dashboard__table">
