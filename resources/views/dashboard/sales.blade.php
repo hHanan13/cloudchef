@@ -26,10 +26,10 @@
                             <div class="dashboard__table">
                                                 <div class="thead">
                                                     <div class="row">
-                                                        <div class="col">name</div>
-                                                        <div class="col">trade name</div>
-                                                        <div class="col">email</div>
-                                                        <div class="col">number</div>
+                                                        <div class="col">@lang('lang.name')</div>
+                                        <div class="col">@lang('lang.trade name')</div>
+                                        <div class="col">@lang('lang.email')</div>
+                                        <div class="col">@lang('lang.number')</div>
                                                         <div class="col"></div>
                                                         <div class="col-1"></div>
                                                     </div>
@@ -46,9 +46,9 @@
                                                                         <div class="col">{{$row->phone}}</div>
                                                                         <div class="col">
                                                                             @if($row->contact == true)         
-                                                                                <span class="contacted_span active__color">contacted</span>         
+                                                                                <span class="contacted_span active__color">@lang('lang.Contacted') </span>         
                                                                             @else
-                                                                            <a href="{{ url('admin/restaurant/'.$row->id.'/contact')}}" onclick="confirm('Are you sure?') || event.stopImmediatePropagation()" ><span class="contacted_span">waiting...</span>  </a>  
+                                                                            <a href="{{ url('admin/restaurant/'.$row->id.'/contact')}}" onclick="confirm('Are you sure?') || event.stopImmediatePropagation()" ><span class="contacted_span">@lang('lang.waiting')...</span>  </a>  
                                                                             @endif   
                                                                         </div>
                                                                         <div class="col-1">
