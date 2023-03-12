@@ -16,6 +16,7 @@
         "biscolab/laravel-recaptcha": "^5.3",
         "botman/botman": "^2.7",
         "botman/driver-web": "^1.5",
+        "cviebrock/eloquent-sluggable": "*",
         "dompdf/dompdf": "^2.0",
         "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.0.1",
