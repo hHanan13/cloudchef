@@ -123,7 +123,7 @@
                             <div class="dashboard__center row px-0">
                                 <div class="col-12 col-xl-9">
                                     <div class="invcTopFlex">
-                                        <div class="inv__mdTitle"> Create News </div>
+                                        <div class="inv__mdTitle"> @lang('lang.create news') </div>
                                         <div class="printDwnFlx">
                                             <a href="#" class="kt-nav__link print__link"><img src="{{ asset('images/print.svg') }}" alt=""></a>
                                             <a href="#" class="kt-nav__link" download><img src="{{ asset('images/down.svg') }}" alt=""></a>
@@ -133,7 +133,7 @@
                                         <div class="myFlex__row">
                                             <div class="col-12 col-lg-5">
                                                 <form action="" class="search__form">
-                                                    <label class="mdFtitle">Date created</label>
+                                                    <label class="mdFtitle">@lang('lang.Date created')</label>
                                                     <div class="myFlex__row mb__20">
                                                         <div class="timeCol_relative w__70">
                                                             <i class="fa-solid fa-chevron-down down__absBtn"></i>
@@ -144,14 +144,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="form__group mb__20">
-                                                        <input type="text" placeholder="title" class="form-control">
+                                                        <input type="text" placeholder="@lang('lang.title')" class="form-control">
                                                     </div>
                                                     <div class="relative__textarea areaWidth__100 mb__20">
-                                                        <textarea class="jobs__textarea invoice__textarea mt-0" placeholder="content" maxlength="100"></textarea>
+                                                        <textarea class="jobs__textarea invoice__textarea mt-0" placeholder="@lang('lang.content')" maxlength="100"></textarea>
                                                     </div>
                                                     <button type="s" href="news.html" class="invoice__link mt__40">
                                                         <img src="{{ asset('images/offer2.svg')}}" alt="">
-                                                        create news
+                                                        @lang('lang.create news')
                                                     </button>
                                                 </form>
                                             </div>
@@ -160,27 +160,27 @@
                                                     <div class="invoice__details">
                                                         <div class="myFlex__row">
                                                             <div class="col-12 col-md-6 col-xl-4 invoice_col">
-                                                                <label class="inovice_label">name</label>
+                                                                <label class="inovice_label">@lang('lang.name')</label>
                                                                 <span class="invoice__info">Raana Elnbawy</span>
                                                             </div>
                                                             <div class="col-12 col-md-6 col-xl-4 invoice_col">
-                                                                <label class="inovice_label">number</label>
+                                                                <label class="inovice_label">@lang('lang.number')</label>
                                                                 <span class="invoice__info">000 000 000</span>
                                                             </div>
                                                             <div class="col-12 col-md-6 col-xl-4 invoice_col">
-                                                                <label class="inovice_label">website</label>
+                                                                <label class="inovice_label">@lang('lang.website')</label>
                                                                 <span class="invoice__info">www.com</span>
                                                             </div>
                                                             <div class="col-12 col-md-6 col-xl-4 invoice_col">
-                                                                <label class="inovice_label">brand name</label>
+                                                                <label class="inovice_label">@lang('lang.brand name')</label>
                                                                 <span class="invoice__info">brand name</span>
                                                             </div>
                                                             <div class="col-12 col-md-6 col-xl-4 invoice_col">
-                                                                <label class="inovice_label">city</label>
-                                                                <span class="invoice__info">Saudi Arabia</span>
+                                                                <label class="inovice_label">@lang('lang.city')</label>
+                                                                <span class="invoice__info">@lang('lang.Saudi Arabia')</span>
                                                             </div>
                                                             <div class="col-12 col-md-6 col-xl-4 invoice_col">
-                                                                <label class="inovice_label">email</label>
+                                                                <label class="inovice_label">@lang('lang.email')</label>
                                                                 <span class="invoice__info">Ran@gmail.com</span>
                                                             </div>
                                                         </div>
@@ -190,55 +190,55 @@
                                                             <div class="row">
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
-                                                                        <label for="" class="abs__label">name</label>
+                                                                        <label for="" class="abs__label">@lang('lang.name')</label>
                                                                         <input type="text" placeholder="Raana Elnbawy" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
-                                                                        <label for="" class="abs__label">number</label>
+                                                                        <label for="" class="abs__label">@lang('lang.number')</label>
                                                                         <input type="text" placeholder="number" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
-                                                                        <label for="" class="abs__label">brand name</label>
+                                                                        <label for="" class="abs__label">@lang('lang.brand name')</label>
                                                                         <input type="text" placeholder="brand name" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
-                                                                        <label for="" class="abs__label">city</label>
+                                                                        <label for="" class="abs__label">@lang('lang.city')</label>
                                                                         <input type="text" placeholder="city" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
-                                                                        <label for="" class="abs__label">website</label>
+                                                                        <label for="" class="abs__label">@lang('lang.website')</label>
                                                                         <input type="text" placeholder="website" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
-                                                                        <label for="" class="abs__label">number of employees</label>
+                                                                        <label for="" class="abs__label">@lang('lang.number of employees')</label>
                                                                         <input type="text" placeholder="number of employees" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
-                                                                        <label for="" class="abs__label">email</label>
+                                                                        <label for="" class="abs__label">@lang('lang.email')</label>
                                                                         <input type="email" placeholder="email" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12 col-lg-6">
                                                                     <div class="relative__group">
-                                                                        <label for="" class="abs__label">number of branches</label>
+                                                                        <label for="" class="abs__label">@lang('lang.number of branches')</label>
                                                                         <input type="text" placeholder="number of branches" class="form-control">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="alignFlex__end">
-                                                                <button type="submit" class="modal__btn next__btn">add</button>
+                                                                <button type="submit" class="modal__btn next__btn">@lang('lang.add')</button>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -250,42 +250,42 @@
                                 <div class="col-12 col-md-6 col-xl-3">
                                     <div class="pt__30"> 
                                         <div class="yellow__card bk__site">
-                                            <h3 class="side__title">visit website</h3>
+                                            <h3 class="side__title">@lang('lang.visit website')</h3>
                                             <div class="flex__end">
                                                 <span class="red__num">300</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
                                         </div>
                                         <div class="yellow__card rg__site">
-                                            <h3 class="side__title">Registered</h3>
+                                            <h3 class="side__title">@lang('lang.Registered')</h3>
                                             <div class="flex__end">
-                                                <span class="red__num">199</span>
-                                                <span>client</span>
+                                                <span class="red__num">{{\App\Models\merchant::count()}}</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
-                                            <h5 class="typCusTitle orgColtiTle">new customer</h5>
+                                            <h5 class="typCusTitle orgColtiTle">@lang('lang.new customer')</h5>
                                             <div class="flex__end">
                                                 <span class="grey__num orgColtiTle">120</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
-                                            <h5 class="typCusTitle greColtiTle">partner client</h5>
+                                            <h5 class="typCusTitle greColtiTle">@lang('lang.partner client')</h5>
                                             <div class="flex__end">
                                                 <span class="grey__num greColtiTle">79</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
-                                            <h5 class="typCusTitle oBColtiTle">Client under follow up</h5>
+                                            <h5 class="typCusTitle oBColtiTle">@lang('lang.Client under follow')</h5>
                                             <div class="flex__end">
                                                 <span class="grey__num oBColtiTle">120</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
-                                            <h5 class="typCusTitle redColtiTle">Discontinued client</h5>
+                                            <h5 class="typCusTitle redColtiTle">@lang('lang.Discontinued client')</h5>
                                             <div class="flex__end">
                                                 <span class="grey__num redColtiTle">79</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
-                                            <h5 class="typCusTitle grColtiTle">Uninterested customer</h5>
+                                            <h5 class="typCusTitle grColtiTle">@lang('lang.Uninterested customer')</h5>
                                             <div class="flex__end">
                                                 <span class="grey__num grColtiTle">79</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
                                         </div>
                                     </div>

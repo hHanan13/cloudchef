@@ -20,9 +20,9 @@
                                 <div class="col">{{$reports->phone}}</div>
                                 <div class="col">
                                     @if($reports->contact == true)         
-                                    <span class="contacted_span active__color">contacted</span>         
+                                    <span class="contacted_span active__color">@lang('lang.Contacted')</span>         
                                 @else
-                                <a href="{{ url('admin/report/'.$reports->id.'/contact')}}"><span class="contacted_span">waiting...</span> </a>     
+                                <a href="{{ url('admin/report/'.$reports->id.'/contact')}}"><span class="contacted_span">@lang('lang.waiting')...</span> </a>     
                                 @endif  
                                 </div>
                                 <div class="col-1">
@@ -76,7 +76,7 @@
                 <div class="ctreatInvoice__wrpper">
                     <div class="report__title">
                         <img src="{{ asset('images/inv.svg')}}" alt="" class="report__thumb">
-                        <span class="add__repolink">Add a report</span>
+                        <span class="add__repolink">@lang('lang.Add a report')</span>
                     </div>
                     <div class="dashInvoice__table">
                         <!--row one-->
@@ -121,42 +121,42 @@
             <div class="col-12 col-md-6 col-xl-3">
                 <div class="pt__30"> 
                     <div class="yellow__card bk__site">
-                        <h3 class="side__title">visit website</h3>
+                        <h3 class="side__title">@lang('lang.visit website')</h3>
                         <div class="flex__end">
                             <span class="red__num">300</span>
-                            <span>client</span>
+                            <span>@lang('lang.client')</span>
                         </div>
                     </div>
                     <div class="yellow__card rg__site">
-                        <h3 class="side__title">Registered</h3>
+                        <h3 class="side__title">@lang('lang.Registered')</h3>
                         <div class="flex__end">
-                            <span class="red__num">199</span>
-                            <span>client</span>
+                            <span class="red__num">{{\App\Models\merchant::count()}}</span>
+                            <span>@lang('lang.client')</span>
                         </div>
-                        <h5 class="typCusTitle orgColtiTle">new customer</h5>
+                        <h5 class="typCusTitle orgColtiTle">@lang('lang.new customer')</h5>
                         <div class="flex__end">
                             <span class="grey__num orgColtiTle">120</span>
-                            <span>client</span>
+                            <span>@lang('lang.client')</span>
                         </div>
-                        <h5 class="typCusTitle greColtiTle">partner client</h5>
+                        <h5 class="typCusTitle greColtiTle">@lang('lang.partner client')</h5>
                         <div class="flex__end">
                             <span class="grey__num greColtiTle">79</span>
-                            <span>client</span>
+                            <span>@lang('lang.client')</span>
                         </div>
-                        <h5 class="typCusTitle oBColtiTle">Client under follow up</h5>
+                        <h5 class="typCusTitle oBColtiTle">@lang('lang.Client under follow')</h5>
                         <div class="flex__end">
                             <span class="grey__num oBColtiTle">120</span>
-                            <span>client</span>
+                            <span>@lang('lang.client')</span>
                         </div>
-                        <h5 class="typCusTitle redColtiTle">Discontinued client</h5>
+                        <h5 class="typCusTitle redColtiTle">@lang('lang.Discontinued client')</h5>
                         <div class="flex__end">
                             <span class="grey__num redColtiTle">79</span>
-                            <span>client</span>
+                            <span>@lang('lang.client')</span>
                         </div>
-                        <h5 class="typCusTitle grColtiTle">Uninterested customer</h5>
+                        <h5 class="typCusTitle grColtiTle">@lang('lang.Uninterested customer')</h5>
                         <div class="flex__end">
                             <span class="grey__num grColtiTle">79</span>
-                            <span>client</span>
+                            <span>@lang('lang.client')</span>
                         </div>
                     </div>
                 </div>

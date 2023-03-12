@@ -125,12 +125,12 @@
                                     <ul class="nav nav-pills dash__inner__pills">
                                         <li class="nav-item">
                                             <a class="nav-link active" href="#current_wrapper" data-toggle="tab">
-                                                offers (40)
+                                                @lang('lang.offers') (40)
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#collaborative_orders" data-toggle="tab">
-                                                news (08)
+                                                @lang('lang.news') (08)
                                             </a>
                                         </li>
                                     </ul>
@@ -140,22 +140,22 @@
                                                 <div class="dashboard__table">
                                                     <div class="thead">
                                                         <div class="row">
-                                                            <div class="col"> title </div>
-                                                            <div class="col"> content</div>
-                                                            <div class="col"> date </div>
-                                                            <div class="col"> category </div>
-                                                            <div class="col"> type </div>
+                                                            <div class="col"> @lang('lang.title') </div>
+                                                            <div class="col"> @lang('lang.content')</div>
+                                                            <div class="col"> @lang('lang.date') </div>
+                                                            <div class="col"> @lang('lang.category') </div>
+                                                            <div class="col"> @lang('lang.type') </div>
                                                             <div class="col-1"></div>
                                                         </div>
                                                     </div>
                                                     <div class="twrapper table__row">
                                                         <a href="add_offer.html">
                                                             <div class="row collapse__table">
-                                                                <div class="col"> special offer </div>
-                                                                <div class="col">Lorem ipsum dolor sit amet.</div>
+                                                                <div class="col"> @lang('lang.special offer') </div>
+                                                                <div class="col">@lang('lang.Lorem ipsum dolor sit amet')</div>
                                                                 <div class="col">2/2/2022</div>
-                                                                <div class="col"> Professional restaurant </div>
-                                                                <div class="col"> New customer </div>
+                                                                <div class="col"> @lang('lang.Professional Restaurant') </div>
+                                                                <div class="col"> @lang('lang.new customer') </div>
                                                                 <div class="col-1">
                                                                     <div class="dropdown dashboard__dropdown">
                                                                         <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
@@ -169,11 +169,11 @@
                                                     <div class="twrapper table__row">
                                                         <a href="add_offer.html">
                                                             <div class="row collapse__table">
-                                                                <div class="col"> special offer </div>
-                                                                <div class="col">Lorem ipsum dolor sit amet.</div>
+                                                                <div class="col"> @lang('lang.special offer') </div>
+                                                                <div class="col">@lang('lang.Lorem ipsum dolor sit amet')</div>
                                                                 <div class="col">2/2/2022</div>
-                                                                <div class="col"> New restaurant </div>
-                                                                <div class="col"> Partner client </div>
+                                                                <div class="col"> @lang('lang.New Restaurant') </div>
+                                                                <div class="col"> @lang('lang.partner client') </div>
                                                                 <div class="col-1">
                                                                     <div class="dropdown dashboard__dropdown">
                                                                         <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
@@ -187,11 +187,11 @@
                                                     <div class="twrapper table__row">
                                                         <a href="add_offer.html">
                                                             <div class="row collapse__table">
-                                                                <div class="col"> special offer </div>
-                                                                <div class="col">Lorem ipsum dolor sit amet.</div>
+                                                                <div class="col"> @lang('lang.special offer') </div>
+                                                                <div class="col">@lang('lang.Lorem ipsum dolor sit amet')</div>
                                                                 <div class="col">2/2/2022</div>
-                                                                <div class="col"> Professional restaurant </div>
-                                                                <div class="col"> Discontinued client </div>
+                                                                <div class="col"> @lang('lang.Professional Restaurant') </div>
+                                                                <div class="col"> @lang('lang.Discontinued client') </div>
                                                                 <div class="col-1">
                                                                     <div class="dropdown dashboard__dropdown">
                                                                         <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
@@ -204,7 +204,7 @@
                                                     </div>
                                                     <a href="{{ url('admin/offer') }}" class="invoice__link">
                                                         <img src="{{ asset('images/offer.svg')}}" alt="">
-                                                        create offer
+                                                        @lang('lang.create offer')
                                                     </a>
                                                 </div>
                                             </div>
@@ -214,17 +214,17 @@
                                                 <div class="dashboard__table">
                                                     <div class="thead">
                                                         <div class="row">
-                                                            <div class="col"> title </div>
-                                                            <div class="col"> content</div>
-                                                            <div class="col"> date </div>
+                                                            <div class="col"> @lang('lang.title') </div>
+                                                            <div class="col"> @lang('lang.content') </div>
+                                                            <div class="col"> @lang('lang.date') </div>
                                                             <div class="col-1"></div>
                                                         </div>
                                                     </div>
                                                     <div class="twrapper table__row">
                                                         <a href="add_offer.html">
                                                             <div class="row collapse__table">
-                                                                <div class="col"> special offer </div>
-                                                                <div class="col">Lorem Ipsum is simply dummy text of the printing and typesetting industry…</div>
+                                                                <div class="col"> @lang('lang.special offer') </div>
+                                                                <div class="col">@lang('lang.Lorem Ipsum is simply dummy')</div>
                                                                 <div class="col">2/2/2022</div>
                                                                 <div class="col-1">
                                                                     <div class="dropdown dashboard__dropdown">
@@ -239,8 +239,8 @@
                                                     <div class="twrapper table__row">
                                                         <a href="add_offer.html">
                                                             <div class="row collapse__table">
-                                                                <div class="col"> special offer </div>
-                                                                <div class="col">Lorem Ipsum is simply dummy text of the printing and typesetting industry…</div>
+                                                                <div class="col"> @lang('lang.special offer') </div>
+                                                                <div class="col">@lang('lang.Lorem Ipsum is simply dummy')</div>
                                                                 <div class="col">2/2/2022</div>
                                                                 <div class="col-1">
                                                                     <div class="dropdown dashboard__dropdown">
@@ -255,8 +255,8 @@
                                                     <div class="twrapper table__row">
                                                         <a href="add_offer.html">
                                                             <div class="row collapse__table">
-                                                                <div class="col"> special offer </div>
-                                                                <div class="col">Lorem Ipsum is simply dummy text of the printing and typesetting industry…</div>
+                                                                <div class="col"> @lang('lang.special offer') </div>
+                                                                <div class="col">@lang('lang.Lorem Ipsum is simply dummy')</div>
                                                                 <div class="col">2/2/2022</div>
                                                                 <div class="col-1">
                                                                     <div class="dropdown dashboard__dropdown">
@@ -270,7 +270,7 @@
                                                     </div>
                                                     <a href="{{ url('admin/new') }}" class="invoice__link">
                                                         <img src="{{ asset('images/offer2.svg')}}" alt="">
-                                                        create news
+                                                        @lang('lang.create news')
                                                     </a>
                                                 </div>
                                             </div>
@@ -281,27 +281,27 @@
                                 <div class="col-12 col-md-6 col-xl-3">
                                     <div class="pt__30"> 
                                         <div class="yellow__card bk__site">
-                                            <h3 class="side__title">visit website</h3>
+                                            <h3 class="side__title">@lang('lang.visit website')</h3>
                                             <div class="flex__end">
                                                 <span class="red__num">300</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
                                         </div>
                                         <div class="yellow__card rg__site">
-                                            <h3 class="side__title">Registered</h3>
+                                            <h3 class="side__title">@lang('lang.Registered')</h3>
                                             <div class="flex__end">
                                                 <span class="red__num">199</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
-                                            <h5 class="red__title">new</h5>
+                                            <h5 class="red__title">@lang('lang.new')</h5>
                                             <div class="flex__end">
                                                 <span class="grey__num">120</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
-                                            <h5 class="red__title">Professional</h5>
+                                            <h5 class="red__title">@lang('lang.Professional')</h5>
                                             <div class="flex__end">
                                                 <span class="grey__num">79</span>
-                                                <span>client</span>
+                                                <span>@lang('lang.client')</span>
                                             </div>
                                         </div>
                                     </div>
@@ -320,7 +320,7 @@
             
                     <!--start footer-->
                     <footer class="footer">
-                        <span>Cloud Chef © 2022</span>
+                        <span>Cloud Chef © 2023</span>
                     </footer>
                 
                     <!-- to top button-->
